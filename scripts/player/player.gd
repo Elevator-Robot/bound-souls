@@ -1,0 +1,34 @@
+extends CharacterBody2D
+
+@export var speed: float = 100.0
+@onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
+
+
+func _physics_process(_delta: float) -> void:
+	var x: float = Input.get_axis("ui_left", "ui_right")
+	var y: float = Input.get_axis("ui_up", "ui_down")
+	var dir: Vector2 = Vector2(x, y)
+
+	if dir.length() > 1.0:
+		dir = dir.normalized()
+
+	velocity = dir * speed
+	move_and_slide()
+	_update_animation(dir)
+
+
+func _update_animation(dir: Vector2) -> void:
+	if dir == Vector2.ZERO:
+		sprite.play("Idol")
+		return
+
+	if abs(dir.x) > abs(dir.y):
+		if dir.x > 0.0:
+			sprite.play("walk_right")
+		else:
+			sprite.play("walk_left")
+	else:
+		if dir.y > 0.0:
+			sprite.play("walk_down")
+		else:
+			sprite.play("walk_up")
