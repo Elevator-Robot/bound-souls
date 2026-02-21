@@ -3,6 +3,7 @@ extends CharacterBody2D
 @export var speed: float = 70.0
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
 var last_axis_horizontal: bool = true
+var last_move_animation: StringName = &"walk_down"
 
 
 func _physics_process(_delta: float) -> void:
@@ -30,16 +31,20 @@ func _physics_process(_delta: float) -> void:
 
 func _update_animation(dir: Vector2) -> void:
 	if dir == Vector2.ZERO:
-		sprite.play("Idol")
+		sprite.play(last_move_animation)
+		sprite.stop()
+		sprite.frame = 0
 		return
 
 	if abs(dir.x) > abs(dir.y):
 		if dir.x > 0.0:
-			sprite.play("walk_right")
+			last_move_animation = &"walk_right"
 		else:
-			sprite.play("walk_left")
+			last_move_animation = &"walk_left"
 	else:
 		if dir.y > 0.0:
-			sprite.play("walk_down")
+			last_move_animation = &"walk_down"
 		else:
-			sprite.play("walk_up")
+			last_move_animation = &"walk_up"
+
+	sprite.play(last_move_animation)

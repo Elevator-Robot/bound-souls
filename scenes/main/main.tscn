@@ -171,15 +171,15 @@ position = Vector2(39, 162)
 scale = Vector2(2, 2)
 
 [node name="Tree1" parent="WorldObjects" instance=ExtResource("4_l3cfh")]
-position = Vector2(-518, -1563.5)
+position = Vector2(-514, -1563.5)
 scale = Vector2(1, 1)
 
 [node name="Tree2" parent="WorldObjects" instance=ExtResource("4_l3cfh")]
-position = Vector2(-489.5, -1537.5)
+position = Vector2(-411.5, -1558)
 scale = Vector2(1, 1)
 
 [node name="Tree3" parent="WorldObjects" instance=ExtResource("4_l3cfh")]
-position = Vector2(-462.5, -1581)
+position = Vector2(-466, -1592)
 scale = Vector2(1, 1)
 
 [node name="Tree4" parent="WorldObjects" instance=ExtResource("4_l3cfh")]
@@ -191,7 +191,7 @@ position = Vector2(-438, -1554)
 scale = Vector2(1, 1)
 
 [node name="Tree6" parent="WorldObjects" instance=ExtResource("4_l3cfh")]
-position = Vector2(-535, -1503)
+position = Vector2(-536, -1507)
 scale = Vector2(1, 1)
 
 [node name="Tree7" parent="WorldObjects" instance=ExtResource("4_l3cfh")]
@@ -199,11 +199,11 @@ position = Vector2(-557.5, -1551.5)
 scale = Vector2(1, 1)
 
 [node name="Tree8" parent="WorldObjects" instance=ExtResource("4_l3cfh")]
-position = Vector2(-538, -1527)
+position = Vector2(-529.5, -1604.5)
 scale = Vector2(1, 1)
 
 [node name="Tree9" parent="WorldObjects" instance=ExtResource("4_l3cfh")]
-position = Vector2(-561.5, -1528)
+position = Vector2(-572.5, -1587)
 scale = Vector2(1, 1)
 
 [node name="Tree10" parent="WorldObjects" instance=ExtResource("4_l3cfh")]
@@ -211,11 +211,11 @@ position = Vector2(-563, -1499)
 scale = Vector2(1, 1)
 
 [node name="Tree11" parent="WorldObjects" instance=ExtResource("4_l3cfh")]
-position = Vector2(-518.5, -1518.5)
+position = Vector2(-439.5, -1521)
 scale = Vector2(1, 1)
 
 [node name="Tree12" parent="WorldObjects" instance=ExtResource("4_l3cfh")]
-position = Vector2(-500, -1503)
+position = Vector2(-432, -1523)
 scale = Vector2(1, 1)
 
 [node name="Tree13" parent="WorldObjects" instance=ExtResource("4_l3cfh")]
@@ -243,23 +243,23 @@ position = Vector2(-543, -1570.5)
 scale = Vector2(1, 1)
 
 [node name="Tree19" parent="WorldObjects" instance=ExtResource("4_l3cfh")]
-position = Vector2(-523.5, -1588)
+position = Vector2(-439.5, -1610)
 scale = Vector2(1, 1)
 
 [node name="Tree20" parent="WorldObjects" instance=ExtResource("4_l3cfh")]
-position = Vector2(-586, -1544.5)
+position = Vector2(-596.5, -1546)
 scale = Vector2(1, 1)
 
 [node name="Tree21" parent="WorldObjects" instance=ExtResource("4_l3cfh")]
-position = Vector2(-578, -1521.5)
+position = Vector2(-610, -1522.5)
 scale = Vector2(1, 1)
 
 [node name="Tree22" parent="WorldObjects" instance=ExtResource("4_l3cfh")]
-position = Vector2(-592, -1498.5)
+position = Vector2(-623.5, -1498.5)
 scale = Vector2(1, 1)
 
 [node name="Tree23" parent="WorldObjects" instance=ExtResource("4_l3cfh")]
-position = Vector2(-586.5, -1480.5)
+position = Vector2(-582.5, -1477)
 scale = Vector2(1, 1)
 
 [node name="Tree_2" parent="WorldObjects" instance=ExtResource("5_6q06x")]
@@ -279,7 +279,7 @@ position = Vector2(-520.5, -1437.5)
 scale = Vector2(1, 1)
 
 [node name="Tree_6" parent="WorldObjects" instance=ExtResource("5_6q06x")]
-position = Vector2(-497, -1430.5)
+position = Vector2(-473.5, -1450.5)
 scale = Vector2(1, 1)
 
 [node name="Tree_7" parent="WorldObjects" instance=ExtResource("5_6q06x")]
@@ -298,28 +298,12 @@ scale = Vector2(1, 1)
 position = Vector2(-547, -1402)
 scale = Vector2(1, 1)
 
-[node name="Tree_11" parent="WorldObjects" instance=ExtResource("6_ow5a4")]
-position = Vector2(-379.5, -1589)
-scale = Vector2(0.5, 0.5)
-
-[node name="Tree_12" parent="WorldObjects" instance=ExtResource("6_ow5a4")]
-position = Vector2(-313, -1556)
-scale = Vector2(0.5, 0.5)
-
-[node name="Tree_13" parent="WorldObjects" instance=ExtResource("6_ow5a4")]
-position = Vector2(-395, -1547)
-scale = Vector2(0.5, 0.5)
-
 [node name="Tree_14" parent="WorldObjects" instance=ExtResource("6_ow5a4")]
 position = Vector2(-477.5, -1311.5)
 scale = Vector2(0.5, 0.5)
 
-[node name="Tree_15" parent="WorldObjects" instance=ExtResource("6_ow5a4")]
-position = Vector2(-387, -1434)
-scale = Vector2(0.5, 0.5)
-
 [node name="Tree_16" parent="WorldObjects" instance=ExtResource("6_ow5a4")]
-position = Vector2(-417, -1632.5)
+position = Vector2(-499, -1539)
 scale = Vector2(1, 1)
 
 [node name="UI" type="CanvasLayer" parent="."]
