@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://beut5pfbshyj7"]
+
+[ext_resource type="Texture2D" uid="uid://sfqrq0g3rtyk" path="res://assets/sprites/tilesets/tilesetppathway.png" id="1_ebsvv"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ku7hd"]
+atlas = ExtResource("1_ebsvv")
+region = Rect2(113, 151, 30, 25)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ebsvv"]
+radius = 6.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2l7xh"]
+atlas = ExtResource("1_ebsvv")
+region = Rect2(116, 129, 27, 22)
+
+[node name="Tree_3" type="Node2D"]
+
+[node name="Base" type="Node2D" parent="."]
+
+[node name="TrunkSprite" type="Sprite2D" parent="Base"]
+z_index = 1
+position = Vector2(-3, -1)
+texture = SubResource("AtlasTexture_ku7hd")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Base"]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Base/StaticBody2D"]
+z_index = 1
+position = Vector2(0, 4)
+shape = SubResource("CircleShape2D_ebsvv")
+
+[node name="Canopy" type="Node2D" parent="."]
+
+[node name="CanopySprite" type="Sprite2D" parent="Canopy"]
+y_sort_enabled = true
+position = Vector2(-1, -24)
+texture = SubResource("AtlasTexture_2l7xh")

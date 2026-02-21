@@ -1,0 +1,31 @@
+[gd_scene load_steps=2 format=3 uid="uid://b52crflhx1b3g"]
+
+[ext_resource type="Texture2D" uid="uid://sfqrq0g3rtyk" path="res://assets/sprites/tilesets/tilesetppathway.png" id="1_jpm2d"]
+
+[node name="Tree_4" type="Node2D"]
+y_sort_enabled = true
+scale = Vector2(2, 2)
+
+[node name="Base" type="Node2D" parent="."]
+
+[node name="Trunk" type="Sprite2D" parent="Base"]
+position = Vector2(-2.5, 13.5)
+texture = ExtResource("1_jpm2d")
+region_enabled = true
+region_rect = Rect2(5, 174, 56, 34)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Base"]
+visible = false
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Base/StaticBody2D"]
+position = Vector2(-2.5, 30.1667)
+polygon = PackedVector2Array(-5, -12.6667, -1, -14.3333, 1.66667, -15, 3.66667, -15, 5.33333, -14.3333, 7.33333, -12, 19, -15.6667, 21, -22, 14, -22, 11.3333, -24, 6.66667, -25.6667, -3, -26, -12.6667, -26.6667, -12.6667, -22.3333)
+
+[node name="Canopy" type="Node2D" parent="."]
+
+[node name="CanopySprite" type="Sprite2D" parent="Canopy"]
+z_index = 1
+position = Vector2(0.5, -23.5)
+texture = ExtResource("1_jpm2d")
+region_enabled = true
+region_rect = Rect2(0, 133, 73, 41)
