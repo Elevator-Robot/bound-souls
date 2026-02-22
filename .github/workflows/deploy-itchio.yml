@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main
+      - feature/main-cicd-itchio
+  workflow_dispatch:
 
 jobs:
   export-and-deploy:
@@ -26,6 +28,21 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Install Godot export templates
+        run: |
+          TEMPLATE_VERSION="4.4-stable"
+          TEMPLATE_DIR="$HOME/.local/share/godot/export_templates/4.4.stable"
+          mkdir -p "$TEMPLATE_DIR" /tmp/godot-templates
+          curl -sSL -o /tmp/godot-templates.tpz "https://github.com/godotengine/godot/releases/download/${TEMPLATE_VERSION}/Godot_v${TEMPLATE_VERSION}_export_templates.tpz"
+          unzip -q /tmp/godot-templates.tpz -d /tmp/godot-templates
+          cp -f /tmp/godot-templates/templates/* "$TEMPLATE_DIR"/
+          if [ -f "$TEMPLATE_DIR/web_debug.zip" ] && [ ! -f "$TEMPLATE_DIR/web_nothreads_debug.zip" ]; then
+            ln -sf "$TEMPLATE_DIR/web_debug.zip" "$TEMPLATE_DIR/web_nothreads_debug.zip"
+          fi
+          if [ -f "$TEMPLATE_DIR/web_release.zip" ] && [ ! -f "$TEMPLATE_DIR/web_nothreads_release.zip" ]; then
+            ln -sf "$TEMPLATE_DIR/web_release.zip" "$TEMPLATE_DIR/web_nothreads_release.zip"
+          fi
 
       - name: Export game (headless)
         run: |
