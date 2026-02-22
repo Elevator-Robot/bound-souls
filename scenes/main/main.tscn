@@ -314,3 +314,6 @@ offset_top = 24.0
 offset_right = 238.0
 offset_bottom = 55.0
 text = "Bound Souls"
+
+[node name="Tree_4" parent="." instance=ExtResource("6_ow5a4")]
+position = Vector2(-1219, -3467)
