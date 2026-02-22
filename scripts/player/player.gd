@@ -1,9 +1,13 @@
 extends CharacterBody2D
 
 @export var speed: float = 70.0
+@export var encounter_check_interval: float = 1.5
+@export_range(0.0, 1.0, 0.01) var encounter_chance: float = 0.25
+@export_file("*.tscn") var battle_scene_path: String = "res://scenes/battle/battle_scene.tscn"
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
 var last_axis_horizontal: bool = true
 var last_move_animation: StringName = &"walk_down"
+var step_timer: float = 0.0
 
 
 func _physics_process(_delta: float) -> void:
@@ -26,6 +30,7 @@ func _physics_process(_delta: float) -> void:
 
 	velocity = dir * speed
 	move_and_slide()
+	_check_random_encounter(_delta)
 	_update_animation(dir)
 
 
@@ -48,3 +53,33 @@ func _update_animation(dir: Vector2) -> void:
 			last_move_animation = &"walk_up"
 
 	sprite.play(last_move_animation)
+
+
+func _check_random_encounter(delta: float) -> void:
+	if velocity.length() <= 0.0:
+		return
+
+	step_timer += delta
+	if step_timer < encounter_check_interval:
+		return
+
+	step_timer = 0.0
+	if randf() >= encounter_chance:
+		return
+	if GameState.souls_collected <= 0:
+		print("Encounter skipped: no captured souls.")
+		return
+
+	_trigger_battle()
+
+
+func _trigger_battle() -> void:
+	if battle_scene_path.is_empty():
+		push_warning("Battle scene path is empty; skipping encounter transition.")
+		return
+
+	if not ResourceLoader.exists(battle_scene_path):
+		push_warning("Battle scene does not exist: " + battle_scene_path)
+		return
+
+	get_tree().change_scene_to_file(battle_scene_path)
