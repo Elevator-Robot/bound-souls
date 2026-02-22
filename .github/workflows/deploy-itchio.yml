@@ -1,0 +1,38 @@
+name: Deploy to itch.io
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  export-and-deploy:
+    runs-on: ubuntu-latest
+    container: barichello/godot-ci:4.4
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Export game (headless)
+        run: |
+          mkdir -p build/linux
+          godot --headless --path . --export-release "Linux/X11" build/linux/bound-souls.x86_64
+
+      - name: Zip exported build
+        run: |
+          cd build
+          zip -r bound-souls-linux.zip linux
+
+      - name: Install butler
+        run: |
+          curl -sSL -o butler.zip https://broth.itch.ovh/butler/linux-amd64/LATEST/archive/default
+          unzip -q butler.zip -d butler
+          chmod +x butler/butler
+
+      - name: Upload build to itch.io
+        env:
+          BUTLER_API_KEY: ${{ secrets.ITCHIO_API_KEY }}
+          ITCHIO_TARGET: ${{ secrets.ITCHIO_USERNAME }}/${{ secrets.ITCHIO_GAME }}:${{ secrets.ITCHIO_CHANNEL }}
+        run: |
+          ./build/butler/butler push build/bound-souls-linux.zip "$ITCHIO_TARGET"
