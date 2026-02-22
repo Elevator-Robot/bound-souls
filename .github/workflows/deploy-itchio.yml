@@ -70,9 +70,17 @@ jobs:
 
       - name: Install butler
         run: |
-          curl -sSL -o butler.zip https://broth.itch.ovh/butler/linux-amd64/LATEST/archive/default
-          unzip -q butler.zip -d butler
-          chmod +x butler/butler
+          mkdir -p build/butler
+          for url in \
+            "https://broth.itch.zone/butler/linux-amd64/LATEST/archive/default" \
+            "https://github.com/itchio/butler/releases/latest/download/butler-linux-amd64.zip"
+          do
+            if curl -fsSL -o /tmp/butler.zip "$url"; then
+              break
+            fi
+          done
+          unzip -q /tmp/butler.zip -d build/butler
+          chmod +x build/butler/butler
 
       - name: Upload build to itch.io
         env:
