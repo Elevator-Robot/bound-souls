@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=4 uid="uid://cbb42vr45panl"]
+[gd_scene load_steps=10 format=4 uid="uid://cbb42vr45panl"]
 
 [ext_resource type="Script" uid="uid://oj1o0plsjqlp" path="res://scripts/main/main.gd" id="1"]
 [ext_resource type="PackedScene" uid="uid://cya3pprmd00w2" path="res://scenes/characters/player.tscn" id="2"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://b75h0o6r6ijiw" path="res://scenes/world/tree_1.tscn" id="4_l3cfh"]
 [ext_resource type="PackedScene" uid="uid://bvg5rlrq2olah" path="res://scenes/world/tree_2.tscn" id="5_6q06x"]
 [ext_resource type="PackedScene" uid="uid://b52crflhx1b3g" path="res://scenes/world/tree_4.tscn" id="6_ow5a4"]
+[ext_resource type="PackedScene" path="res://scenes/ui/cheat_menu.tscn" id="7_cheat"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_l3cfh"]
 texture = ExtResource("3_k2fmo")
@@ -306,6 +307,8 @@ scale = Vector2(0.5, 0.5)
 position = Vector2(-499, -1539)
 scale = Vector2(1, 1)
 
+[node name="CheatMenu" parent="." instance=ExtResource("7_cheat")]
+
 [node name="UI" type="CanvasLayer" parent="."]
 
 [node name="Title" type="Label" parent="UI"]
@@ -314,3 +317,6 @@ offset_top = 24.0
 offset_right = 238.0
 offset_bottom = 55.0
 text = "Bound Souls"
+
+[node name="Tree_4" parent="." instance=ExtResource("6_ow5a4")]
+position = Vector2(-1219, -3467)

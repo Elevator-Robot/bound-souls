@@ -3,15 +3,9 @@
 ## CI/CD deploy to itch.io
 
 On every push to `main`, GitHub Actions runs `.github/workflows/deploy-itchio.yml` and:
-1. Exports the game with Godot headless for `Linux/X11`, `Windows Desktop`, and `Web`
-2. Creates zipped outputs:
-   - `build/bound-souls-linux.zip`
-   - `build/bound-souls-windows.zip`
-   - `build/bound-souls-web.zip`
-3. Uploads each zip to itch.io via butler channels:
-   - `username/game:linux`
-   - `username/game:windows`
-   - `username/game:web`
+1. Exports the game with Godot headless using the `Web` preset from `export_presets.cfg`
+2. Produces browser files in `build/web` (with `index.html` at root)
+3. Uploads `build/web` to itch.io via butler channel `html5` (`username/game:html5`)
 
 ### Required repository secrets
 
