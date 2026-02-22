@@ -9,6 +9,19 @@ jobs:
   export-and-deploy:
     runs-on: ubuntu-latest
     container: barichello/godot-ci:4.4
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - preset: Linux/X11
+            channel: linux
+            output: build/linux/bound-souls.x86_64
+          - preset: Windows Desktop
+            channel: windows
+            output: build/windows/bound-souls.exe
+          - preset: Web
+            channel: web
+            output: build/web/index.html
 
     steps:
       - name: Checkout
@@ -16,13 +29,13 @@ jobs:
 
       - name: Export game (headless)
         run: |
-          mkdir -p build/linux
-          godot --headless --path . --export-release "Linux/X11" build/linux/bound-souls.x86_64
+          mkdir -p "build/${{ matrix.channel }}"
+          godot --headless --path . --export-release "${{ matrix.preset }}" "${{ matrix.output }}"
 
       - name: Zip exported build
         run: |
           cd build
-          zip -r bound-souls-linux.zip linux
+          zip -r "bound-souls-${{ matrix.channel }}.zip" "${{ matrix.channel }}"
 
       - name: Install butler
         run: |
@@ -33,6 +46,6 @@ jobs:
       - name: Upload build to itch.io
         env:
           BUTLER_API_KEY: ${{ secrets.ITCHIO_API_KEY }}
-          ITCHIO_TARGET: ${{ secrets.ITCHIO_USERNAME }}/${{ secrets.ITCHIO_GAME }}:${{ secrets.ITCHIO_CHANNEL }}
+          ITCHIO_TARGET: ${{ secrets.ITCHIO_USERNAME }}/${{ secrets.ITCHIO_GAME }}:${{ matrix.channel }}
         run: |
-          ./build/butler/butler push build/bound-souls-linux.zip "$ITCHIO_TARGET"
+          ./build/butler/butler push "build/bound-souls-${{ matrix.channel }}.zip" "$ITCHIO_TARGET"
