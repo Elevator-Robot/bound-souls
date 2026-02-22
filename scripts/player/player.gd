@@ -10,6 +10,10 @@ var last_move_animation: StringName = &"walk_down"
 var step_timer: float = 0.0
 
 
+func _ready() -> void:
+	add_to_group("player")
+
+
 func _physics_process(_delta: float) -> void:
 	var x: float = Input.get_axis("ui_left", "ui_right")
 	var y: float = Input.get_axis("ui_up", "ui_down")
@@ -57,6 +61,8 @@ func _update_animation(dir: Vector2) -> void:
 
 func _check_random_encounter(delta: float) -> void:
 	if velocity.length() <= 0.0:
+		return
+	if not GameState.encounters_enabled:
 		return
 
 	step_timer += delta
