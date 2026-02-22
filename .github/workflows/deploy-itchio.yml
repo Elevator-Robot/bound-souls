@@ -69,7 +69,7 @@ jobs:
           BUTLER_API_KEY: ${{ secrets.ITCHIO_API_KEY }}
           ITCHIO_USERNAME: ${{ secrets.ITCHIO_USERNAME }}
           ITCHIO_GAME: ${{ secrets.ITCHIO_GAME }}
-          ITCHIO_CHANNEL: web
+          ITCHIO_CHANNEL: html5
         run: |
           username="${ITCHIO_USERNAME}"
           game_raw="${ITCHIO_GAME}"

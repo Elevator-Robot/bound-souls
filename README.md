@@ -5,7 +5,7 @@
 On every push to `main`, GitHub Actions runs `.github/workflows/deploy-itchio.yml` and:
 1. Exports the game with Godot headless using the `Web` preset from `export_presets.cfg`
 2. Produces browser files in `build/web` (with `index.html` at root)
-3. Uploads `build/web` to itch.io via butler channel `web` (`username/game:web`)
+3. Uploads `build/web` to itch.io via butler channel `html5` (`username/game:html5`)
 
 ### Required repository secrets
 
