@@ -12,6 +12,9 @@ var step_timer: float = 0.0
 
 func _ready() -> void:
 	add_to_group("player")
+	if GameState.should_restore_position_after_battle:
+		global_position = GameState.position_before_battle
+		GameState.should_restore_position_after_battle = false
 
 
 func _physics_process(_delta: float) -> void:
@@ -88,4 +91,6 @@ func _trigger_battle() -> void:
 		push_warning("Battle scene does not exist: " + battle_scene_path)
 		return
 
+	GameState.position_before_battle = global_position
+	GameState.should_restore_position_after_battle = true
 	get_tree().change_scene_to_file(battle_scene_path)

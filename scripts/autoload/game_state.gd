@@ -40,6 +40,8 @@ var active_soul_index: int = 0
 var souls_collected: int = 0
 var last_battle_result: String = ""
 var encounters_enabled: bool = true
+var position_before_battle: Vector2 = Vector2.ZERO
+var should_restore_position_after_battle: bool = false
 
 
 func _ready() -> void:
@@ -51,6 +53,8 @@ func reset_run() -> void:
 	active_soul_index = 0
 	last_battle_result = ""
 	encounters_enabled = true
+	position_before_battle = Vector2.ZERO
+	should_restore_position_after_battle = false
 	_ensure_starter_soul()
 
 
