@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - feature/main-cicd-itchio
   workflow_dispatch:
 
 jobs:
