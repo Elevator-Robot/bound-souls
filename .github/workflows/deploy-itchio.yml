@@ -85,6 +85,35 @@ jobs:
       - name: Upload build to itch.io
         env:
           BUTLER_API_KEY: ${{ secrets.ITCHIO_API_KEY }}
-          ITCHIO_TARGET: ${{ secrets.ITCHIO_USERNAME }}/${{ secrets.ITCHIO_GAME }}:${{ matrix.channel }}
+          ITCHIO_USERNAME: ${{ secrets.ITCHIO_USERNAME }}
+          ITCHIO_GAME: ${{ secrets.ITCHIO_GAME }}
         run: |
+          username="${ITCHIO_USERNAME}"
+          game_raw="${ITCHIO_GAME}"
+
+          game_raw="${game_raw#https://}"
+          game_raw="${game_raw#http://}"
+          game_raw="${game_raw#www.}"
+
+          if echo "$game_raw" | grep -q "\.itch\.io/"; then
+            inferred_user="${game_raw%%.itch.io/*}"
+            inferred_game="${game_raw#*.itch.io/}"
+            if [ -n "$inferred_user" ]; then
+              username="$inferred_user"
+            fi
+            game_raw="$inferred_game"
+          fi
+
+          game_raw="${game_raw#itch.io/}"
+          game="${game_raw##*/}"
+          game="${game%%\?*}"
+          game="${game%%#*}"
+
+          if [ -z "$username" ] || [ -z "$game" ]; then
+            echo "::error::Invalid itch secrets. Set ITCHIO_USERNAME (example: yourname) and ITCHIO_GAME (example: bound-souls or full game URL)."
+            exit 1
+          fi
+
+          ITCHIO_TARGET="${username}/${game}:${{ matrix.channel }}"
+          echo "Using itch target: $ITCHIO_TARGET"
           ./build/butler/butler push "build/bound-souls-${{ matrix.channel }}.zip" "$ITCHIO_TARGET"
