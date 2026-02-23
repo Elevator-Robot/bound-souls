@@ -1,0 +1,23 @@
+[gd_scene load_steps=3 format=3 uid="uid://b4m22yprohq0h"]
+
+[ext_resource type="Texture2D" uid="uid://sfqrq0g3rtyk" path="res://assets/sprites/tilesets/tilesetppathway.png" id="1_uwrg2"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5pp67"]
+radius = 3.0
+height = 14.0
+
+[node name="Crystle_2" type="Node2D"]
+y_sort_enabled = true
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -8)
+texture = ExtResource("1_uwrg2")
+region_enabled = true
+region_rect = Rect2(0, 96, 16, 16)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, -7)
+shape = SubResource("CapsuleShape2D_5pp67")
