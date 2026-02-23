@@ -12,7 +12,7 @@ scale = Vector2(2, 2)
 position = Vector2(-2.5, 13.5)
 texture = ExtResource("1_jpm2d")
 region_enabled = true
-region_rect = Rect2(5, 174, 56, 34)
+region_rect = Rect2(9, 285, 55, 34)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Base"]
 visible = false
@@ -28,4 +28,4 @@ z_index = 1
 position = Vector2(0.5, -23.5)
 texture = ExtResource("1_jpm2d")
 region_enabled = true
-region_rect = Rect2(0, 133, 73, 41)
+region_rect = Rect2(3, 244, 73, 41)

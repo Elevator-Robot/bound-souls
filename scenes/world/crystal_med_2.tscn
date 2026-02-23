@@ -1,6 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://chq3odlvct2fi"]
+[gd_scene load_steps=3 format=3 uid="uid://bou2k0h03orb1"]
 
-[ext_resource type="Texture2D" uid="uid://sfqrq0g3rtyk" path="res://assets/sprites/tilesets/tilesetppathway.png" id="1_uwrg2"]
+[ext_resource type="Texture2D" uid="uid://sfqrq0g3rtyk" path="res://assets/sprites/tilesets/tilesetppathway.png" id="1_mmja5"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4jyos"]
 radius = 4.0
@@ -10,9 +10,9 @@ y_sort_enabled = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -8)
-texture = ExtResource("1_uwrg2")
+texture = ExtResource("1_mmja5")
 region_enabled = true
-region_rect = Rect2(0, 112, 16, 16)
+region_rect = Rect2(16, 128, 16, 16)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 visible = false
