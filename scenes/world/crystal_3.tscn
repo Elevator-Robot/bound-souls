@@ -6,7 +6,7 @@
 radius = 3.0
 height = 14.0
 
-[node name="Crystle_3" type="Node2D"]
+[node name="Crystal_3" type="Node2D"]
 y_sort_enabled = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

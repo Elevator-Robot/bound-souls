@@ -1,19 +1,19 @@
-[gd_scene load_steps=3 format=3 uid="uid://b4m22yprohq0h"]
+[gd_scene load_steps=3 format=3 uid="uid://c41b7byxxplyc"]
 
-[ext_resource type="Texture2D" uid="uid://sfqrq0g3rtyk" path="res://assets/sprites/tilesets/tilesetppathway.png" id="1_uwrg2"]
+[ext_resource type="Texture2D" uid="uid://sfqrq0g3rtyk" path="res://assets/sprites/tilesets/tilesetppathway.png" id="1_0o0xp"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5pp67"]
 radius = 3.0
 height = 14.0
 
-[node name="Crystle_2" type="Node2D"]
+[node name="Crystal_1" type="Node2D"]
 y_sort_enabled = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -8)
-texture = ExtResource("1_uwrg2")
+texture = ExtResource("1_0o0xp")
 region_enabled = true
-region_rect = Rect2(0, 96, 16, 16)
+region_rect = Rect2(0, 80, 16, 16)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 visible = false
