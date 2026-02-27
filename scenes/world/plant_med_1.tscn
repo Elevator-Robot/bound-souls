@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://bd306qr3ce55x"]
+
+[ext_resource type="Texture2D" uid="uid://sfqrq0g3rtyk" path="res://assets/sprites/tilesets/tilesetppathway.png" id="1_24spo"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1ae0h"]
+radius = 5.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3erkx"]
+radius = 3.0
+
+[node name="plant_med_1" type="Node2D"]
+z_index = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-0.5, -42)
+texture = ExtResource("1_24spo")
+region_enabled = true
+region_rect = Rect2(106, 204, 91, 72)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+visible = false
+position = Vector2(-0.5, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+z_index = 1
+position = Vector2(-15, -48)
+shape = SubResource("CircleShape2D_1ae0h")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(1, -28)
+shape = SubResource("CircleShape2D_3erkx")
