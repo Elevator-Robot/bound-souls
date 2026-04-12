@@ -14,7 +14,7 @@ atlas = ExtResource("1_6ehx1")
 region = Rect2(49, 82, 30, 18)
 
 [node name="Tree_2" type="Node2D"]
-scale = Vector2(2, 2)
+scale = Vector2(4, 4)
 
 [node name="Base" type="Node2D" parent="."]
 

@@ -15,7 +15,7 @@ z_index = 1
 position = Vector2(-0.5, -42)
 texture = ExtResource("1_24spo")
 region_enabled = true
-region_rect = Rect2(106, 204, 91, 72)
+region_rect = Rect2(106, 212, 91, 72)
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 visible = false

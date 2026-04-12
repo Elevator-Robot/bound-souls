@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export var speed: float = 70.0
+@export var speed: float = 100.0
 @export var encounter_check_interval: float = 1.5
 @export_range(0.0, 1.0, 0.01) var encounter_chance: float = 0.25
 @export_file("*.tscn") var battle_scene_path: String = "res://scenes/battle/battle_scene.tscn"
