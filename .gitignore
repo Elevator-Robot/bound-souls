@@ -2,3 +2,9 @@
 .godot/
 /android/
 /build/
+
+# Summer machine-local state and generated output (keep shared project memory)
+/.summer/local/
+/.summer/shots/
+/.summer/captures/
+/.summer/exports/
