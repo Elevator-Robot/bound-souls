@@ -12,22 +12,12 @@ const BATTLE_SOUNDS: Dictionary = {
 	"victory": "res://assets/audio/sfx/button_fx/fx/magic/button_fx_magic_009_cc0_avr.wav"
 }
 
-const ENEMY_SOUL_POOL: Array[Dictionary] = [
-	{"name": "Flamewing", "element": "grass", "level": 1, "max_hp": 35, "attack": 45, "defense": 30, "sprite": "res://assets/sprites/sprite1_idle.png", "sprite_attack": "res://assets/sprites/sprite1_attack.png", "evolves_to": "Aquaveil", "evolves_at": 16},
-	{"name": "Nightstalker", "element": "grass", "level": 1, "max_hp": 42, "attack": 50, "defense": 34, "sprite": "res://assets/sprites/sprite15_idle.png", "sprite_attack": "res://assets/sprites/sprite15_attack.png", "evolves_to": "Prismguard", "evolves_at": 20},
-	{"name": "Thunderfang", "element": "water", "level": 1, "max_hp": 32, "attack": 52, "defense": 28, "sprite": "res://assets/sprites/sprite12_idle.png", "sprite_attack": "res://assets/sprites/sprite12_attack.png", "evolves_to": "Vinelash", "evolves_at": 16},
-	{"name": "Shadowclaw", "element": "fire", "level": 1, "max_hp": 40, "attack": 48, "defense": 32, "sprite": "res://assets/sprites/sprite7_idle.png", "sprite_attack": "res://assets/sprites/sprite7_attack.png", "evolves_to": "Crystalwing", "evolves_at": 16},
-	{"name": "Voltspike", "element": "earth", "level": 1, "max_hp": 38, "attack": 55, "defense": 32, "sprite": "res://assets/sprites/sprite4_idle.png", "sprite_attack": "res://assets/sprites/sprite4_attack.png"},
-	{"name": "Leafwhisper", "element": "wind", "level": 1, "max_hp": 40, "attack": 48, "defense": 40, "sprite": "res://assets/sprites/sprite5_idle.png", "sprite_attack": "res://assets/sprites/sprite5_attack.png"},
-	{"name": "Frostbite", "element": "ice", "level": 1, "max_hp": 44, "attack": 50, "defense": 38, "sprite": "res://assets/sprites/sprite6_idle.png", "sprite_attack": "res://assets/sprites/sprite6_attack.png"},
-	{"name": "Tidehunter", "element": "cute", "level": 1, "max_hp": 48, "attack": 42, "defense": 45, "sprite": "res://assets/sprites/sprite10_idle.png", "sprite_attack": "res://assets/sprites/sprite10_attack.png"},
-	{"name": "Stoneguard", "element": "electric", "level": 1, "max_hp": 52, "attack": 40, "defense": 58, "sprite": "res://assets/sprites/sprite11_idle.png", "sprite_attack": "res://assets/sprites/sprite11_attack.png"}
-]
-
 var player_soul: Dictionary = {}
 var enemy_soul: Dictionary = {}
 var battle_active: bool = false
 var player_turn: bool = true
+var enemy_animation: AnimatedSprite2D
+var player_animation: AnimatedSprite2D
 
 @onready var background: TextureRect = $Background
 @onready var player_sprite: TextureRect = $BattleArea/PlayerSprite
@@ -65,9 +55,11 @@ func _start_battle() -> void:
 		return
 
 	player_soul["current_hp"] = int(player_soul.get("max_hp", 1))
-	var enemy_index: int = randi() % ENEMY_SOUL_POOL.size()
-	enemy_soul = ENEMY_SOUL_POOL[enemy_index].duplicate(true)
-	enemy_soul["current_hp"] = int(enemy_soul.get("max_hp", 1))
+	var species_names: Array = GameState.SOUL_SPECIES.keys()
+	var enemy_index: int = randi() % species_names.size()
+	enemy_soul = GameState.create_wild_soul(species_names[enemy_index])
+	player_animation = _setup_animation(player_soul, player_sprite)
+	enemy_animation = _setup_animation(enemy_soul, enemy_sprite)
 
 	battle_active = true
 	player_turn = true
@@ -85,13 +77,39 @@ func _refresh_ui() -> void:
 	player_level_label.text = "Lv. %d" % int(player_soul.get("level", 1))
 	player_hp_bar.value = float(player_soul["current_hp"]) / float(player_soul["max_hp"])
 	player_hp_label.text = "HP: %d/%d" % [player_soul["current_hp"], player_soul["max_hp"]]
-	player_sprite.texture = _make_first_frame_texture(player_soul["sprite"])
 
 	enemy_name_label.text = "%s (%s)" % [enemy_soul["name"], String(enemy_soul["element"]).capitalize()]
 	enemy_level_label.text = "Lv. %d" % int(enemy_soul.get("level", 1))
 	enemy_hp_bar.value = float(enemy_soul["current_hp"]) / float(enemy_soul["max_hp"])
 	enemy_hp_label.text = "HP: %d/%d" % [enemy_soul["current_hp"], enemy_soul["max_hp"]]
-	enemy_sprite.texture = _make_first_frame_texture(enemy_soul["sprite"])
+
+
+func _setup_animation(soul: Dictionary, container: TextureRect) -> AnimatedSprite2D:
+	# Instantiate the approved scene so its fixed pivot and nearest filtering are retained.
+	var scene: PackedScene = load(soul["scene"])
+	var animation: AnimatedSprite2D = scene.instantiate()
+	container.add_child(animation)
+	container.texture = null
+	container.resized.connect(_layout_animation.bind(animation, container))
+	_layout_animation(animation, container)
+	animation.play(&"idle")
+	return animation
+
+
+func _layout_animation(animation: AnimatedSprite2D, container: TextureRect) -> void:
+	var canvas: Vector2 = animation.sprite_frames.get_frame_texture(&"idle", 0).get_size()
+	# Fit the entire fixed canvas, never individual visible-frame bounds.
+	var factor: float = minf(container.size.x / canvas.x, container.size.y / canvas.y)
+	animation.scale = Vector2.ONE * factor
+	animation.position = (container.size - canvas * factor) * 0.5 - animation.offset * factor
+
+
+func _play_action(animation: AnimatedSprite2D, clip: StringName) -> void:
+	animation.play(clip)
+	await animation.animation_finished
+	# Death must hold its final frame instead of making the defeated soul reappear.
+	if clip != &"death":
+		animation.play(&"idle")
 
 
 func _show_message(text: String) -> void:
@@ -106,6 +124,7 @@ func _on_attack_pressed() -> void:
 	attack_button.disabled = true
 	run_button.disabled = true
 	_play_battle_sound("attack")
+	await _play_action(player_animation, &"attack")
 
 	var player_damage: int = _calculate_damage(player_soul, enemy_soul)
 	enemy_soul["current_hp"] = max(0, int(enemy_soul["current_hp"]) - player_damage)
@@ -113,11 +132,13 @@ func _on_attack_pressed() -> void:
 	_refresh_ui()
 	_show_message("%s hit %s for %d!" % [player_soul["name"], enemy_soul["name"], player_damage])
 	if int(enemy_soul["current_hp"]) <= 0:
-		await get_tree().create_timer(0.8).timeout
+		await _play_action(enemy_animation, &"death")
 		_end_battle("won", "You won the battle!")
 		return
 
+	await _play_action(enemy_animation, &"hurt")
 	await get_tree().create_timer(0.8).timeout
+	await _play_action(enemy_animation, &"attack")
 	var enemy_damage: int = _calculate_damage(enemy_soul, player_soul)
 	_play_battle_sound("attack")
 	player_soul["current_hp"] = max(0, int(player_soul["current_hp"]) - enemy_damage)
@@ -125,22 +146,26 @@ func _on_attack_pressed() -> void:
 	_refresh_ui()
 	_show_message("%s hit %s for %d!" % [enemy_soul["name"], player_soul["name"], enemy_damage])
 	if int(player_soul["current_hp"]) <= 0:
-		await get_tree().create_timer(0.8).timeout
+		await _play_action(player_animation, &"death")
 		_end_battle("lost", "Your soul fainted.")
 		return
 
+	await _play_action(player_animation, &"hurt")
 	player_turn = true
 	attack_button.disabled = false
 	run_button.disabled = false
 
 
 func _on_run_pressed() -> void:
+	if not player_turn:
+		return
 	if not battle_active:
 		get_tree().change_scene_to_file("res://scenes/main/main.tscn")
 		return
 
 	attack_button.disabled = true
 	run_button.disabled = true
+	player_turn = false
 	_play_battle_sound("run")
 	_show_message("You escaped safely.")
 	await get_tree().create_timer(0.6).timeout
@@ -162,17 +187,6 @@ func _end_battle(result: String, message: String) -> void:
 	_show_message(message)
 	await get_tree().create_timer(0.8).timeout
 	get_tree().change_scene_to_file("res://scenes/main/main.tscn")
-
-
-func _make_first_frame_texture(texture_path: String) -> Texture2D:
-	var atlas_source: Texture2D = load(texture_path)
-	if atlas_source == null:
-		return null
-
-	var atlas: AtlasTexture = AtlasTexture.new()
-	atlas.atlas = atlas_source
-	atlas.region = Rect2(0, 0, 96, 96)
-	return atlas
 
 
 func _play_battle_sound(sound_name: String) -> void:

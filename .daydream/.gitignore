@@ -1,0 +1,4 @@
+# Local artifacts; config and asset metadata remain trackable.
+/cache/
+/previews/
+/state/

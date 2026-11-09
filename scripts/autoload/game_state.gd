@@ -1,37 +1,58 @@
 extends Node
 
 const SOUL_SPECIES: Dictionary = {
-	"Shadowclaw": {
+	"Whisp": {
+		"element": "wind",
+		"base_hp": 40,
+		"base_attack": 48,
+		"base_defense": 40,
+		"scene": "res://assets/sprites/whisp-complete-battle.tscn"
+	},
+	"Nyx": {
+		"element": "dark",
+		"base_hp": 42,
+		"base_attack": 50,
+		"base_defense": 34,
+		"scene": "res://assets/sprites/nyx-complete-battle.tscn"
+	},
+	"Moss": {
+		"element": "grass",
+		"base_hp": 48,
+		"base_attack": 42,
+		"base_defense": 45,
+		"scene": "res://assets/sprites/moss-complete-battle.tscn"
+	},
+	"Maw": {
+		"element": "dark",
+		"base_hp": 38,
+		"base_attack": 55,
+		"base_defense": 32,
+		"scene": "res://assets/sprites/maw-complete-battle.tscn"
+	},
+	"Malgharok": {
 		"element": "fire",
 		"base_hp": 40,
 		"base_attack": 48,
 		"base_defense": 32,
-		"sprite": "res://assets/sprites/sprite7_idle.png",
-		"sprite_attack": "res://assets/sprites/sprite7_attack.png",
-		"evolves_to": "Crystalwing",
-		"evolves_at": 16
+		"scene": "res://assets/sprites/malgharok-complete-battle.tscn"
 	},
-	"Crystalwing": {
-		"element": "fire",
-		"base_hp": 48,
-		"base_attack": 54,
-		"base_defense": 42,
-		"sprite": "res://assets/sprites/sprite8_idle.png",
-		"sprite_attack": "res://assets/sprites/sprite8_attack.png",
-		"evolves_to": "Blazeclaw",
-		"evolves_at": 32
+	"Khefret": {
+		"element": "earth",
+		"base_hp": 52,
+		"base_attack": 40,
+		"base_defense": 58,
+		"scene": "res://assets/sprites/khefret-complete-battle.tscn"
 	},
-	"Blazeclaw": {
-		"element": "fire",
-		"base_hp": 58,
-		"base_attack": 62,
-		"base_defense": 50,
-		"sprite": "res://assets/sprites/sprite9_idle.png",
-		"sprite_attack": "res://assets/sprites/sprite9_attack.png"
+	"Juniper": {
+		"element": "water",
+		"base_hp": 32,
+		"base_attack": 52,
+		"base_defense": 28,
+		"scene": "res://assets/sprites/juniper-complete-battle.tscn"
 	}
 }
 const STARTING_SOUL: Dictionary = {
-	"name": "Shadowclaw",
+	"name": "Whisp",
 	"level": 1
 }
 
@@ -72,7 +93,6 @@ func set_active_soul_level(new_level: int) -> bool:
 	var clamped_index: int = clamp(active_soul_index, 0, player_souls.size() - 1)
 	var soul: Dictionary = player_souls[clamped_index]
 	soul["level"] = new_level
-	_apply_evolution_for_level(soul)
 	_recalculate_soul_stats(soul)
 	player_souls[clamped_index] = soul
 	return true
@@ -94,13 +114,20 @@ func _create_soul(species_name: String, level: int) -> Dictionary:
 		"name": species_name,
 		"element": species.get("element", "fire"),
 		"level": level,
-		"sprite": species.get("sprite", ""),
-		"sprite_attack": species.get("sprite_attack", "")
+		"scene": species.get("scene", "")
 	}
-	if species.has("evolves_to"):
-		soul["evolves_to"] = species["evolves_to"]
-		soul["evolves_at"] = species["evolves_at"]
 	_recalculate_soul_stats(soul)
+	return soul
+
+
+func create_wild_soul(species_name: String) -> Dictionary:
+	# Preserve the original level-one encounter stat range, without player growth bonuses.
+	var soul: Dictionary = _create_soul(species_name, 1)
+	var species: Dictionary = SOUL_SPECIES[species_name]
+	soul["max_hp"] = species["base_hp"]
+	soul["attack"] = species["base_attack"]
+	soul["defense"] = species["base_defense"]
+	soul["current_hp"] = soul["max_hp"]
 	return soul
 
 
@@ -115,26 +142,3 @@ func _recalculate_soul_stats(soul: Dictionary) -> void:
 	soul["attack"] = int(species.get("base_attack", 1)) + (level * 3)
 	soul["defense"] = int(species.get("base_defense", 1)) + (level * 3)
 	soul["current_hp"] = soul["max_hp"]
-
-
-func _apply_evolution_for_level(soul: Dictionary) -> void:
-	while true:
-		var species_name: String = soul.get("name", "")
-		var species: Dictionary = SOUL_SPECIES.get(species_name, {})
-		if species.is_empty() or not species.has("evolves_to"):
-			return
-		if int(soul.get("level", 1)) < int(species["evolves_at"]):
-			return
-
-		var evolved_name: String = species["evolves_to"]
-		var evolved_data: Dictionary = SOUL_SPECIES.get(evolved_name, {})
-		soul["name"] = evolved_name
-		soul["element"] = evolved_data.get("element", soul.get("element", "fire"))
-		soul["sprite"] = evolved_data.get("sprite", soul.get("sprite", ""))
-		soul["sprite_attack"] = evolved_data.get("sprite_attack", soul.get("sprite_attack", ""))
-		if evolved_data.has("evolves_to"):
-			soul["evolves_to"] = evolved_data["evolves_to"]
-			soul["evolves_at"] = evolved_data["evolves_at"]
-		else:
-			soul.erase("evolves_to")
-			soul.erase("evolves_at")

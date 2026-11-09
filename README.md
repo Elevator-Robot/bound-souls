@@ -1,5 +1,30 @@
 # Bound Souls
 
+## Current soul roster
+
+Whisp is the starter. Encounters draw from Whisp, Nyx, Moss, Maw, Malgharok,
+Khefret, and Juniper. Each uses its imported Complete Battle scene, including
+idle, attack, hurt, and death clips. These are seven distinct souls, with no
+evolution relationships for now. Level-based stat growth is unchanged.
+
+The roster reuses existing combat stat ranges: Whisp is balanced, Nyx and Maw
+favor offense, Moss and Khefret favor defense, Malgharok is a fire attacker,
+and Juniper is a fragile water attacker. Element labels do not change damage;
+the existing attack-versus-defense calculation remains in place.
+
+Static asset checks (Python standard library only):
+
+```sh
+PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -v
+```
+
+These verify resource paths, the seven-species roster, managed import hashes,
+clip loop flags, and removal of legacy numbered soul images. They do not run
+Godot or establish motion quality. With Godot 4.4, run the smoke checks below,
+then play a battle: check both souls' idle/attack/hurt animations, a knockout
+holding its final frame, escape returning to the world, and F12 level changes
+at 16 and 32 retaining Whisp. Review sprite fit at different window sizes.
+
 ## Open in Summer Engine
 
 This is an existing Godot 4.4 / GL Compatibility project. Summer's documented

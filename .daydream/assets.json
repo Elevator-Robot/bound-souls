@@ -1,0 +1,412 @@
+{
+  "assets": [
+    {
+      "approval": {
+        "files": {
+          "attack.contact.png": "c4ab28f54007e4163446fcf8da28e0e5f8b8148d9346f3794864a8cd799c63ce",
+          "attack.motion.png": "83fe84f3d210026ba1db77d745079541eecf800442a7a013023fcbe80565852a",
+          "idle.contact.png": "23b7be30b311614b33ddbd17e8d6e867d8ff4c156f0dc6d2421ef2651cd4559a",
+          "idle.motion.png": "147026d86cd20bcf9a8c45137aa6fef9b75a2b83a4ce20976b6a9cf269ad42c2",
+          "preview.html": "e4e1ec93fb2575b1f5f5e19de2b214725e48ad54d5116d486ac578713a2604f8",
+          "source.json": "99fca8c647c0e3f45d3ab44490247d00cfcc80fc6fc0561f0e500c3d04505097",
+          "spritesheet.png": "cc2994971e0dc69c2f7d78089b220a21929a5bdc2184eef2f811f08b9bdbb016"
+        },
+        "kind": "sprite_animation",
+        "reviewed_at": "2026-11-08T17:11:28.362890+00:00",
+        "reviewer": "aphexlog",
+        "revision_hash": "0122482fb1138a44a3709138e9ecb5d789a913a690a866771d6c4a1ac3161f49",
+        "schema_version": 2
+      },
+      "bundle": ".daydream/revisions/sprite_animation/whisp/0122482fb1138a44a3709138e9ecb5d789a913a690a866771d6c4a1ac3161f49-0001",
+      "display_name": "Whisp",
+      "kind": "sprite_animation",
+      "name": "whisp",
+      "paths": {
+        "frames": "assets/sprites/whisp.frames.tres",
+        "scene": "assets/sprites/whisp.tscn",
+        "source": "art/sprites/whisp.json",
+        "texture": "assets/sprites/whisp.png"
+      },
+      "provenance": {
+        "base_revision_hash": "2c95d10296b529b66370d75dea7fb5968354454258d0c6af97733cd18dac291a",
+        "display_name": "Whisp",
+        "license": null,
+        "method": "animation-recipe",
+        "recipe_sha256": "b7593d33bccec768b8373eecc273ae208068aad19ad89cf7c3052b204751c0ea"
+      },
+      "revision_hash": "0122482fb1138a44a3709138e9ecb5d789a913a690a866771d6c4a1ac3161f49",
+      "schema_version": 1,
+      "sha256": {
+        "art/sprites/whisp.json": "99fca8c647c0e3f45d3ab44490247d00cfcc80fc6fc0561f0e500c3d04505097",
+        "assets/sprites/whisp.frames.tres": "681a2f9588d122f0e2617624627b3cad8eb3665fa55a32c23ebcfb877746a2c4",
+        "assets/sprites/whisp.png": "cc2994971e0dc69c2f7d78089b220a21929a5bdc2184eef2f811f08b9bdbb016",
+        "assets/sprites/whisp.tscn": "14b7259f363ee072c990d9a45cf6d55ee27461ad3d1f43edc6ad65dab8e7b72d"
+      }
+    },
+    {
+      "approval": {
+        "preview_sha256": "6da3fece0f084f9f52384151a7d66a711f9638c1c4513845648b6f32cb7ddd58",
+        "reviewed_at": "2026-11-08T21:24:47.188107+00:00",
+        "reviewer": "aphexlog",
+        "revision_hash": "3bced9167acc2102f6321464999f92b21a1be5dd5fc7cac803ab0d568cd69b2f",
+        "schema_version": 1,
+        "sprite_sha256": "a74ba2819ca77b72920e21ccf42fe573ce147433fe7130dfb724ed798966dca2"
+      },
+      "bundle": ".daydream/revisions/sprite/nyx-soul/3bced9167acc2102f6321464999f92b21a1be5dd5fc7cac803ab0d568cd69b2f-0001",
+      "display_name": "Nyx \u2014 Soul",
+      "kind": "sprite",
+      "name": "nyx-soul",
+      "paths": {
+        "scene": "assets/sprites/nyx-soul.tscn",
+        "source": "art/sprites/nyx-soul.json",
+        "texture": "assets/sprites/nyx-soul.png"
+      },
+      "provenance": {
+        "display_name": "Nyx \u2014 Soul",
+        "license": null,
+        "method": "edit",
+        "parent_revision_hash": "28dde5b90bb876e64d83ed3820ec97d7bb5f20131ad0fc2b27391ed6a9cdbad3",
+        "patch_sha256": "505e1e6dd74a71b1c26099038bd22f7b9efcae657c4360b6d6d564d979e7e851"
+      },
+      "revision_hash": "3bced9167acc2102f6321464999f92b21a1be5dd5fc7cac803ab0d568cd69b2f",
+      "schema_version": 1,
+      "sha256": {
+        "art/sprites/nyx-soul.json": "099b0f31c2566415434754d227aac220291f8613d3d23863204feb75cfe84e93",
+        "assets/sprites/nyx-soul.png": "a74ba2819ca77b72920e21ccf42fe573ce147433fe7130dfb724ed798966dca2",
+        "assets/sprites/nyx-soul.tscn": "19212760e4fa8bf4a073e5556879ab9a91a6764395a618ca07986a45b3c76ca8"
+      }
+    },
+    {
+      "approval": {
+        "files": {
+          "attack.contact.png": "7c297ad5fbd97b47d12b3df62e2648102b6e75efa42b45fc95deb6aa913474ec",
+          "attack.motion.png": "35c738b6a7f42650e8e522aab609d1bc3f726027ceb54a68f19fa1934c0e6047",
+          "death.contact.png": "38932e402f7b607e7f51782aff5dab51c48077efd0b2bfbe104785a3e8eeefb9",
+          "death.motion.png": "54d25fcd11e09b1b1565156b48092cc0368fa573ca0593a7ff03484aa0bed984",
+          "hurt.contact.png": "22d84a6d80f03e861f5af00ec6f3b1f1b3252298d288a9491ca89f6300111914",
+          "hurt.motion.png": "d1ee1f1e80c8215384f108b146a269f149a81ee72ed8c15301ed35218544017e",
+          "idle.contact.png": "405802486c97b472cba8f7b8ca19e3b8fc00a5648e860de2bdf3ea76837703cb",
+          "idle.motion.png": "f5b1414b7a25dd20198683c4fcf0e22c4ffe8097975cb172cd7b25ea257f2c52",
+          "preview.html": "ace27141f753975a983dfb4a468b0e99c1424c8918372b8625c5a97cb65f4301",
+          "source.json": "34e336f20d80ef32c11f244104850ec1b36ffe8a8379dfac1dc4cc6c5ef559c9",
+          "spritesheet.png": "6be940455e69fd20d86987080f494efc82a840653a5b5e61a04ffab62b3b4703"
+        },
+        "kind": "sprite_animation",
+        "reviewed_at": "2026-11-09T19:01:36.921971+00:00",
+        "reviewer": "user",
+        "revision_hash": "9ea8a76a16c2dc131e0d648227fbb2783a1e868a302be013f4c9e22e4b56cdcb",
+        "schema_version": 2
+      },
+      "bundle": ".daydream/revisions/sprite_animation/khefret-complete-battle/9ea8a76a16c2dc131e0d648227fbb2783a1e868a302be013f4c9e22e4b56cdcb-0001",
+      "display_name": "Khefret Complete Battle",
+      "kind": "sprite_animation",
+      "name": "khefret-complete-battle",
+      "paths": {
+        "frames": "assets/sprites/khefret-complete-battle.frames.tres",
+        "scene": "assets/sprites/khefret-complete-battle.tscn",
+        "source": "art/sprites/khefret-complete-battle.json",
+        "texture": "assets/sprites/khefret-complete-battle.png"
+      },
+      "provenance": {
+        "display_name": "Khefret Complete Battle",
+        "license": null,
+        "method": "animation-edit",
+        "parent_revision_hash": "0a9521471d54f1d86a1ff356fa671afec3da483179c82bf257ff43e4f7f9e96f",
+        "patch_sha256": "ab2a4c750e0d768861b7c8abfc252615c820269184f08acccdd933579ebef11f"
+      },
+      "revision_hash": "9ea8a76a16c2dc131e0d648227fbb2783a1e868a302be013f4c9e22e4b56cdcb",
+      "schema_version": 1,
+      "sha256": {
+        "art/sprites/khefret-complete-battle.json": "34e336f20d80ef32c11f244104850ec1b36ffe8a8379dfac1dc4cc6c5ef559c9",
+        "assets/sprites/khefret-complete-battle.frames.tres": "d79107bb7ce0fa6458cfd2b86ca6c44d8e7fb2e7ab96942e3ca9233f3fe75ff2",
+        "assets/sprites/khefret-complete-battle.png": "6be940455e69fd20d86987080f494efc82a840653a5b5e61a04ffab62b3b4703",
+        "assets/sprites/khefret-complete-battle.tscn": "ad02c5a6c7d3336f154a21f7669af8dbf11a419e748a892b52acd9ff4c3974f7"
+      }
+    },
+    {
+      "approval": {
+        "files": {
+          "attack.contact.png": "94ddfa4ec4d0c9d2176dd6c7dedb612ae1410626313209cd35ba423c81a6a9db",
+          "attack.motion.png": "8269499de12eb96ac9dd9e78f7808faebc55cb9c7bda57ef316d0c17fbdc2d46",
+          "death.contact.png": "067ac0e8601e97284b2d8ccecba3eb119e7f69ac221593386a7ead3b6971b572",
+          "death.motion.png": "1ec4657407b26861f9df93f86a6621d6696210146b110914e67606fe6290ba24",
+          "hurt.contact.png": "5ef5d2682824c79232690a5fbf0bbfe75a545ea1a91ee2a1b79c8d6381a9cd2f",
+          "hurt.motion.png": "ba06c1c1d7d270d7e7ebf1e4daa5faa163ca8d0a9f19b046835bea13ac7f9170",
+          "idle.contact.png": "63ff3b18352f20e99276a2237e4ce1493b61e2263dbf6b86ce57c8832695d620",
+          "idle.motion.png": "76e54f7b820d2cdca2a7c48abeda9b750d2cf3aca91efcf5c70c11fea0152e43",
+          "preview.html": "bcbcad398353e606b2365ef9079c31410bf90cdef9140c22da3dbd4d80bd54ed",
+          "source.json": "28a667a1750c1aabdbc1d058abbfa51d86909e64170ccdd3cb56003d0722eaf8",
+          "spritesheet.png": "91ed2ff90814d5554e53125b07fe17add7c083ef6be77d2c16cdc7fc5352b295"
+        },
+        "kind": "sprite_animation",
+        "reviewed_at": "2026-11-09T19:01:36.599488+00:00",
+        "reviewer": "user",
+        "revision_hash": "fc377a857f5a54187559752fe97d4ce09b31eaed2ebe9ca81f11c0584cfcabd2",
+        "schema_version": 2
+      },
+      "bundle": ".daydream/revisions/sprite_animation/malgharok-complete-battle/fc377a857f5a54187559752fe97d4ce09b31eaed2ebe9ca81f11c0584cfcabd2-0001",
+      "display_name": "Malgharok Complete Battle",
+      "kind": "sprite_animation",
+      "name": "malgharok-complete-battle",
+      "paths": {
+        "frames": "assets/sprites/malgharok-complete-battle.frames.tres",
+        "scene": "assets/sprites/malgharok-complete-battle.tscn",
+        "source": "art/sprites/malgharok-complete-battle.json",
+        "texture": "assets/sprites/malgharok-complete-battle.png"
+      },
+      "provenance": {
+        "display_name": "Malgharok Complete Battle",
+        "license": null,
+        "method": "animation-edit",
+        "parent_revision_hash": "0e921fe2abd346e6db35153729307e9f22e210e8e13fdbf00bf2b558ef661446",
+        "patch_sha256": "d9eccb703f6f8730402dbacefde147cc377a7f6229acf5407d7c3792147c0c32"
+      },
+      "revision_hash": "fc377a857f5a54187559752fe97d4ce09b31eaed2ebe9ca81f11c0584cfcabd2",
+      "schema_version": 1,
+      "sha256": {
+        "art/sprites/malgharok-complete-battle.json": "28a667a1750c1aabdbc1d058abbfa51d86909e64170ccdd3cb56003d0722eaf8",
+        "assets/sprites/malgharok-complete-battle.frames.tres": "a5ca9554559d3914183e273e7ba36a1a15e8dea358f330657467068d52da500d",
+        "assets/sprites/malgharok-complete-battle.png": "91ed2ff90814d5554e53125b07fe17add7c083ef6be77d2c16cdc7fc5352b295",
+        "assets/sprites/malgharok-complete-battle.tscn": "c6cbfe30bccfa2a520f156b7518b02ea77334851095889e19a19ef0d839652ff"
+      }
+    },
+    {
+      "approval": {
+        "files": {
+          "attack.contact.png": "834b1eef1d18ca8e8c00040c64e53df54f6239d38f406ea2ce9324e7940e1add",
+          "attack.motion.png": "603bdc5f9f9f15c5f634d064cdf422385fc6a35815001769579b928bd378a2b7",
+          "death.contact.png": "75fca7c58deba894952892c168142ef474e557298394c6f7e12b0d4a28645fa9",
+          "death.motion.png": "f8069297cf8437b18262fce12ef04389e3ed03be70490fa2b954d1ffbc7912bb",
+          "hurt.contact.png": "9787a1380d906fde3f4144a1007b6139f3db355312f6841a2e70b94be03dffee",
+          "hurt.motion.png": "deb098dab3d8036e7238c55125c98b78bc5c14d1833f68e8a9f9cee27f188d55",
+          "idle.contact.png": "33c33a61284cc7af43afa6de39c29f4d35c82053f56b998334b40d53278a408c",
+          "idle.motion.png": "b1cc44c86f0c1a91859123ccf06ab44e120b31eda67ed02574b542a4c1421ec0",
+          "preview.html": "1efbb5ee1ec8c3c497f468a5807ec466ad354ab2a55f7f5bdde66f8461157ee9",
+          "source.json": "4131ee374ad4e62795b6b951646752cadb8e11902d5fa91bc181a04e13d20e7a",
+          "spritesheet.png": "5c15c1698b54ecccd7a1df0a275d16cc31d07b9aeb5a292a1139b052400f9eb5"
+        },
+        "kind": "sprite_animation",
+        "reviewed_at": "2026-11-09T19:01:35.662218+00:00",
+        "reviewer": "user",
+        "revision_hash": "f0e8d1e3648ac5a9edfa2c678610a52f41234cfa9fc86c1c171c46d8b57523ef",
+        "schema_version": 2
+      },
+      "bundle": ".daydream/revisions/sprite_animation/moss-complete-battle/f0e8d1e3648ac5a9edfa2c678610a52f41234cfa9fc86c1c171c46d8b57523ef-0001",
+      "display_name": "Moss Complete Battle",
+      "kind": "sprite_animation",
+      "name": "moss-complete-battle",
+      "paths": {
+        "frames": "assets/sprites/moss-complete-battle.frames.tres",
+        "scene": "assets/sprites/moss-complete-battle.tscn",
+        "source": "art/sprites/moss-complete-battle.json",
+        "texture": "assets/sprites/moss-complete-battle.png"
+      },
+      "provenance": {
+        "display_name": "Moss Complete Battle",
+        "license": null,
+        "method": "animation-edit",
+        "parent_revision_hash": "dcaddbed1922cb80bb2ec6526eeac2ad2016657750eb382315f6a268be78f65a",
+        "patch_sha256": "17f7e4cec66b7a2329683ae7183d64a90d8aa8ab9f09af485c1cf61f5b3f91ea"
+      },
+      "revision_hash": "f0e8d1e3648ac5a9edfa2c678610a52f41234cfa9fc86c1c171c46d8b57523ef",
+      "schema_version": 1,
+      "sha256": {
+        "art/sprites/moss-complete-battle.json": "4131ee374ad4e62795b6b951646752cadb8e11902d5fa91bc181a04e13d20e7a",
+        "assets/sprites/moss-complete-battle.frames.tres": "ad9b4b5d4113cf5fca74bbaca9ca0ad49741c6f1aeb2edd87cf59d0b76536b53",
+        "assets/sprites/moss-complete-battle.png": "5c15c1698b54ecccd7a1df0a275d16cc31d07b9aeb5a292a1139b052400f9eb5",
+        "assets/sprites/moss-complete-battle.tscn": "be68956c20ffda86c4fd555990414f0e679296ac514b9420907c338fed6b1a53"
+      }
+    },
+    {
+      "approval": {
+        "files": {
+          "attack.contact.png": "4cd71b3b3a2de94ac2987b49a9ca8c3ed980dab2bad7c1c005907a19bf89c3eb",
+          "attack.motion.png": "67ba47323e349bd90f2c5348052469e7b76d57178b20ca510c8d136638a278e0",
+          "death.contact.png": "3fab5a8c5a4d7faed34c670f760d490d2db3ac2f4a01fdafb8c863164d204fd9",
+          "death.motion.png": "ad5612fbbf8127d5f9de718905461e977374c6f4fb6c58f80655b4e8a2aadf48",
+          "hurt.contact.png": "a31fcade1c66c4dc41f6572366ece3042e19366f2a30197e1bdd542d6579b94a",
+          "hurt.motion.png": "fed84e219ac23baca2d4aac55840b509a0c8b77a798e3381a7b18174bd0e1406",
+          "idle.contact.png": "5e1bd9ae86cebdf9cbee3a1b109b6fd158b0e3001b6120e674419635ae3a3a32",
+          "idle.motion.png": "c0880cf53e9f0ee9fd582f7a964ec3f3b763c2659a64bccf92b1ab21953acc80",
+          "preview.html": "90af41d17c117ff7fa2ab9d82a08b7b2ab996d914fcc3705a0950b4f7262a0ca",
+          "source.json": "f676d45de28b6844d789b763319207bbb6a6e206f3eb2d0d5cb74d241569bac5",
+          "spritesheet.png": "f7ec95a43be571c2a95c297723d289a9c16f0c7e6853533b5eb0489090fae38c"
+        },
+        "kind": "sprite_animation",
+        "reviewed_at": "2026-11-09T19:01:37.403798+00:00",
+        "reviewer": "user",
+        "revision_hash": "c4b49a834548fe75da8c6976baf0ba63c9a600ef42f09934cecf8b0bb2b5dfb6",
+        "schema_version": 2
+      },
+      "bundle": ".daydream/revisions/sprite_animation/juniper-complete-battle/c4b49a834548fe75da8c6976baf0ba63c9a600ef42f09934cecf8b0bb2b5dfb6-0001",
+      "display_name": "Juniper Complete Battle",
+      "kind": "sprite_animation",
+      "name": "juniper-complete-battle",
+      "paths": {
+        "frames": "assets/sprites/juniper-complete-battle.frames.tres",
+        "scene": "assets/sprites/juniper-complete-battle.tscn",
+        "source": "art/sprites/juniper-complete-battle.json",
+        "texture": "assets/sprites/juniper-complete-battle.png"
+      },
+      "provenance": {
+        "base_revision_hash": "bed198ae5edbd8e06ee651b741359cd5357bdc4b59143b15284962bba39c0888",
+        "display_name": "Juniper Complete Battle",
+        "license": null,
+        "method": "animation-recipe",
+        "recipe_sha256": "1dc3ee300620e46296babb87999a0a5100a3fe55b3ea9c45d3a24da5432bdccb"
+      },
+      "revision_hash": "c4b49a834548fe75da8c6976baf0ba63c9a600ef42f09934cecf8b0bb2b5dfb6",
+      "schema_version": 1,
+      "sha256": {
+        "art/sprites/juniper-complete-battle.json": "f676d45de28b6844d789b763319207bbb6a6e206f3eb2d0d5cb74d241569bac5",
+        "assets/sprites/juniper-complete-battle.frames.tres": "d0e2a8ca95d2870f27c97c8d2888586b6a0e6b2b852594550769b28d5af05e2a",
+        "assets/sprites/juniper-complete-battle.png": "f7ec95a43be571c2a95c297723d289a9c16f0c7e6853533b5eb0489090fae38c",
+        "assets/sprites/juniper-complete-battle.tscn": "d7298a06a22c38bb123cd98d25edd860206f5dd8dd9fc078ed1d487c19a39dc4"
+      }
+    },
+    {
+      "approval": {
+        "files": {
+          "attack.contact.png": "5d1bc05f694c49c811570c801851dcf941ccacc24bbbfcac6909051667d618f2",
+          "attack.motion.png": "c9f0b5dfd0fe1717d380dffaff5b72c685803672517234a3972544879c2db17c",
+          "death.contact.png": "27a1af654f2eae47e34dd6a2958a36dac65620331fbde265124faa8355f7db80",
+          "death.motion.png": "e06f7bb3fed2bd54146dc824e32aab89708c8c57feca534362125da36c9d6a82",
+          "hurt.contact.png": "e1a04722d79fd9061d95d486df79705f8e6ae88390609044eb6021c86e726ba7",
+          "hurt.motion.png": "f5020cdf4627f70a8d8d471052637ab05166bdc4d146c0245bc7abf695b3a668",
+          "idle.contact.png": "506bd8863fc99a57211ed61a00bbb28dc4d2042b18c7b392abea15de70e58628",
+          "idle.motion.png": "e8e16bc747968eb8cd6975da3a91d99ae6bf15af44e0809c8f46822d4f9254a4",
+          "preview.html": "4399d460b92a0af247098e9add7ff6574b9ee9c03ea98f722d5cb24c2e0aa2bd",
+          "source.json": "55be3f2800afe4e9e1abedafdf63e2aaef50c8be37a997f74413e6c41130213c",
+          "spritesheet.png": "d6b39750370d6cbb7a6535a3b22d5635b7c834888593c0fac5063e0f50606231"
+        },
+        "kind": "sprite_animation",
+        "reviewed_at": "2026-11-09T19:01:36.127449+00:00",
+        "reviewer": "user",
+        "revision_hash": "31b9c61c358bf5871cc02b826de9cf4fe5ac765054557ad0d29d3a52a3af107b",
+        "schema_version": 2
+      },
+      "bundle": ".daydream/revisions/sprite_animation/maw-complete-battle/31b9c61c358bf5871cc02b826de9cf4fe5ac765054557ad0d29d3a52a3af107b-0001",
+      "display_name": "Maw Complete Battle",
+      "kind": "sprite_animation",
+      "name": "maw-complete-battle",
+      "paths": {
+        "frames": "assets/sprites/maw-complete-battle.frames.tres",
+        "scene": "assets/sprites/maw-complete-battle.tscn",
+        "source": "art/sprites/maw-complete-battle.json",
+        "texture": "assets/sprites/maw-complete-battle.png"
+      },
+      "provenance": {
+        "base_revision_hash": "53e016f1155dd9b224d0aff3bb134f7d5635f586004c7973a33e04e5a5fdcfe7",
+        "display_name": "Maw Complete Battle",
+        "license": null,
+        "method": "animation-recipe",
+        "recipe_sha256": "8e75cfc30fbfc7b7ba91d3620d140071ca9f0cb687df90ad22f9fa78246bae76"
+      },
+      "revision_hash": "31b9c61c358bf5871cc02b826de9cf4fe5ac765054557ad0d29d3a52a3af107b",
+      "schema_version": 1,
+      "sha256": {
+        "art/sprites/maw-complete-battle.json": "55be3f2800afe4e9e1abedafdf63e2aaef50c8be37a997f74413e6c41130213c",
+        "assets/sprites/maw-complete-battle.frames.tres": "3cff5f0cf108387f3527c028c96af9fdb957ca55675edb4a396225c670d74da1",
+        "assets/sprites/maw-complete-battle.png": "d6b39750370d6cbb7a6535a3b22d5635b7c834888593c0fac5063e0f50606231",
+        "assets/sprites/maw-complete-battle.tscn": "5a18ff46af8957d2a7ed7676c3531a181d8168eeee3f938c8a7abbc055f5653d"
+      }
+    },
+    {
+      "approval": {
+        "files": {
+          "attack.contact.png": "fc7916dc4bae86f832a9b848b873aa58f31b5eed466ccf9191b93401655158f9",
+          "attack.motion.png": "9b120dcf6bdafb12a2ff70fca6c67fd965601e8ff815812d54ee8f835049d9fc",
+          "death.contact.png": "b14f264d1f445b6457d17dfe252a6b1c84fa6177787bfa15acd0f213d6c63598",
+          "death.motion.png": "c5afea5494fd72d57196cbbd60bbc5eac94fac9eef099c93cb9aef0f231b280e",
+          "hurt.contact.png": "5b42e1edaee315618f6a512995bf5b8d3b8264b8ecdecfb0306fd44820982b3a",
+          "hurt.motion.png": "d72ad5ec103cd5fdc959255fda5180fb63ea31e8cf16e75675800cb6e5367060",
+          "idle.contact.png": "d0af6314191674bbb5bc884790110e3f56792c53791805798434df8b6679809d",
+          "idle.motion.png": "6e3b84e1937f9621244a0e51e3db1a8b5cec583ad4cfe725fc5ca157183a270e",
+          "preview.html": "d0f6fde245ee7b5754609f7d7fae2cf7ae4df0f8a1e1d62b1b1fe34fb79e82f7",
+          "source.json": "b253c8edba9fdb134200ea04a75bd484723314bb28f643787d497541e83bc421",
+          "spritesheet.png": "3d340cac828eab874f9456493dd7a7328669fb6385252bc9bceb59aad30a0021",
+          "vanish.contact.png": "f65d2220099a9c571fa9315bc688c2ed1d2725621f35a506b51291e41f604b89",
+          "vanish.motion.png": "6743450323c12b9bda24d0b4ffd2c62654d90ecd89785f32aa746bc3098aa654"
+        },
+        "kind": "sprite_animation",
+        "reviewed_at": "2026-11-09T19:01:35.145113+00:00",
+        "reviewer": "user",
+        "revision_hash": "53ff65c58326536edd03a8547539d7763ffc938de2783d6e2f036da486969034",
+        "schema_version": 2
+      },
+      "bundle": ".daydream/revisions/sprite_animation/nyx-complete-battle/53ff65c58326536edd03a8547539d7763ffc938de2783d6e2f036da486969034-0001",
+      "display_name": "Nyx Complete Battle",
+      "kind": "sprite_animation",
+      "name": "nyx-complete-battle",
+      "paths": {
+        "frames": "assets/sprites/nyx-complete-battle.frames.tres",
+        "scene": "assets/sprites/nyx-complete-battle.tscn",
+        "source": "art/sprites/nyx-complete-battle.json",
+        "texture": "assets/sprites/nyx-complete-battle.png"
+      },
+      "provenance": {
+        "base_revision_hash": "3bced9167acc2102f6321464999f92b21a1be5dd5fc7cac803ab0d568cd69b2f",
+        "display_name": "Nyx Complete Battle",
+        "license": null,
+        "method": "animation-recipe",
+        "recipe_sha256": "158e4f9cf857581ca3deb3867d594338720fa8d9e98dc516ee2765da12adf64a"
+      },
+      "revision_hash": "53ff65c58326536edd03a8547539d7763ffc938de2783d6e2f036da486969034",
+      "schema_version": 1,
+      "sha256": {
+        "art/sprites/nyx-complete-battle.json": "b253c8edba9fdb134200ea04a75bd484723314bb28f643787d497541e83bc421",
+        "assets/sprites/nyx-complete-battle.frames.tres": "065fd921f447af99209b02bdbe4bc3bcba17873d2e4a16db5edb18fb64eaf55e",
+        "assets/sprites/nyx-complete-battle.png": "3d340cac828eab874f9456493dd7a7328669fb6385252bc9bceb59aad30a0021",
+        "assets/sprites/nyx-complete-battle.tscn": "b3c817a8154c44beb41427d1fb7f30bf9090ae41b206c59fdee21759cd3c485b"
+      }
+    },
+    {
+      "approval": {
+        "files": {
+          "attack.contact.png": "c4ab28f54007e4163446fcf8da28e0e5f8b8148d9346f3794864a8cd799c63ce",
+          "attack.motion.png": "83fe84f3d210026ba1db77d745079541eecf800442a7a013023fcbe80565852a",
+          "death.contact.png": "0a2236adda6eeca8ba0c49cddf8e3f9ddbfdabfd4c88ffbea768d794c1684605",
+          "death.motion.png": "6c0d7daa107839175697ad3068bdd547fd9c52fdc774ab097a3e384353c1b2af",
+          "hurt.contact.png": "82f412703590f90a5926c5be1383078bd12d11e0b7c9337b6aa45b23b11bfc28",
+          "hurt.motion.png": "330d16fe932dfae6e95a0301e6c0c8c386f26c08afd96311a6ad2c086f281302",
+          "idle.contact.png": "23b7be30b311614b33ddbd17e8d6e867d8ff4c156f0dc6d2421ef2651cd4559a",
+          "idle.motion.png": "147026d86cd20bcf9a8c45137aa6fef9b75a2b83a4ce20976b6a9cf269ad42c2",
+          "preview.html": "b2522f7d8f211656f1170ac41662f6be8be051d6e8e166ea9c879de222a3c776",
+          "source.json": "4c7bf6f22e8047e6bc6aad8c6a0f56f4830e796d0903b34431ab7cbd6f3b0e67",
+          "spritesheet.png": "a8236961a1523073332803fb08e564c731546ba5734046b42d68bdff60ef39dc"
+        },
+        "kind": "sprite_animation",
+        "reviewed_at": "2026-11-09T19:01:33.922806+00:00",
+        "reviewer": "user",
+        "revision_hash": "1193baf987a4b1ca2f816aae6313b50896aedaf2a5b70487807c640a938e2919",
+        "schema_version": 2
+      },
+      "bundle": ".daydream/revisions/sprite_animation/whisp-complete-battle/1193baf987a4b1ca2f816aae6313b50896aedaf2a5b70487807c640a938e2919-0001",
+      "display_name": "Whisp Complete Battle",
+      "kind": "sprite_animation",
+      "name": "whisp-complete-battle",
+      "paths": {
+        "frames": "assets/sprites/whisp-complete-battle.frames.tres",
+        "scene": "assets/sprites/whisp-complete-battle.tscn",
+        "source": "art/sprites/whisp-complete-battle.json",
+        "texture": "assets/sprites/whisp-complete-battle.png"
+      },
+      "provenance": {
+        "base_revision_hash": "2c95d10296b529b66370d75dea7fb5968354454258d0c6af97733cd18dac291a",
+        "display_name": "Whisp Complete Battle",
+        "license": null,
+        "method": "animation-recipe",
+        "recipe_sha256": "71c8864d546c8b4e6bd6021ce92c657b20c5f72413d9bedd4dc081beece2b4b9"
+      },
+      "revision_hash": "1193baf987a4b1ca2f816aae6313b50896aedaf2a5b70487807c640a938e2919",
+      "schema_version": 1,
+      "sha256": {
+        "art/sprites/whisp-complete-battle.json": "4c7bf6f22e8047e6bc6aad8c6a0f56f4830e796d0903b34431ab7cbd6f3b0e67",
+        "assets/sprites/whisp-complete-battle.frames.tres": "16b7397f29c09787920fa83e3fa9e76f2878ed1a3ef2fc998baa0a30e0a3e248",
+        "assets/sprites/whisp-complete-battle.png": "a8236961a1523073332803fb08e564c731546ba5734046b42d68bdff60ef39dc",
+        "assets/sprites/whisp-complete-battle.tscn": "dc799037c88dc4123f665329d2e079d75d637a64eff51769ec944c94beedc839"
+      }
+    }
+  ],
+  "schema_version": 1
+}
