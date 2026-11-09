@@ -25,6 +25,25 @@ then play a battle: check both souls' idle/attack/hurt animations, a knockout
 holding its final frame, escape returning to the world, and F12 level changes
 at 16 and 32 retaining Whisp. Review sprite fit at different window sizes.
 
+After pulling new artwork, **import before launching the game**, including when
+using a direct game preview. PNG source files alone are not runtime textures:
+Godot must build their local `.godot/imported` cache. With the project's approved
+engine, run:
+
+```sh
+godot --headless --editor --path . --import
+godot --headless --path . --script res://tests/battle_smoke.gd
+```
+
+The battle regression checks the world-to-battle transition, all seven souls in
+both slots, nontransparent idle textures, viewport/slot fit, and attack/hurt/death
+completion. Layout checks cover every clip's opaque bounds at 1152×648, 800×600,
+600×800, and 1920×1080, then resize back: player left/below enemy, no fighter/UI
+overlap, and separate visible UI panels. Combat uses a reserved middle area,
+status panels across the top, and messages/actions along the bottom. The approved
+canvases and pivots stay fixed. These checks are not a graphical or motion-quality
+review.
+
 ## Open in Summer Engine
 
 This is an existing Godot 4.4 / GL Compatibility project. Summer's documented

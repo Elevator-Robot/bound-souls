@@ -60,6 +60,11 @@ func _start_battle() -> void:
 	enemy_soul = GameState.create_wild_soul(species_names[enemy_index])
 	player_animation = _setup_animation(player_soul, player_sprite)
 	enemy_animation = _setup_animation(enemy_soul, enemy_sprite)
+	if player_animation == null or enemy_animation == null:
+		battle_active = false
+		attack_button.disabled = true
+		_show_message("Could not load fighters. Import project assets in Godot, then retry. Choose Run to return.")
+		return
 
 	battle_active = true
 	player_turn = true
@@ -87,13 +92,39 @@ func _refresh_ui() -> void:
 func _setup_animation(soul: Dictionary, container: TextureRect) -> AnimatedSprite2D:
 	# Instantiate the approved scene so its fixed pivot and nearest filtering are retained.
 	var scene: PackedScene = load(soul["scene"])
-	var animation: AnimatedSprite2D = scene.instantiate()
+	if scene == null:
+		return null
+	var instance: Node = scene.instantiate()
+	if not instance is AnimatedSprite2D:
+		instance.free()
+		return null
+	var animation: AnimatedSprite2D = instance
+	if not _has_battle_frames(animation):
+		push_error("Missing battle frames for %s. Import project assets in the Godot editor." % soul["name"])
+		animation.free()
+		return null
 	container.add_child(animation)
 	container.texture = null
 	container.resized.connect(_layout_animation.bind(animation, container))
 	_layout_animation(animation, container)
 	animation.play(&"idle")
 	return animation
+
+
+func _has_battle_frames(animation: AnimatedSprite2D) -> bool:
+	var frames: SpriteFrames = animation.sprite_frames
+	if frames == null:
+		return false
+	for clip in [&"idle", &"attack", &"hurt", &"death"]:
+		if not frames.has_animation(clip) or frames.get_frame_count(clip) == 0:
+			return false
+		for index in range(frames.get_frame_count(clip)):
+			var texture: Texture2D = frames.get_frame_texture(clip, index)
+			if texture == null or texture.get_size().x <= 0 or texture.get_size().y <= 0:
+				return false
+			if texture is AtlasTexture and texture.atlas == null:
+				return false
+	return true
 
 
 func _layout_animation(animation: AnimatedSprite2D, container: TextureRect) -> void:

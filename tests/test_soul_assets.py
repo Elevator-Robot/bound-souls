@@ -54,6 +54,14 @@ class SoulAssetsTest(unittest.TestCase):
         self.assertEqual([p.name for p in (ROOT / "assets/sprites").iterdir()
                           if legacy.fullmatch(p.name)], [])
 
+    def test_battle_atlases_have_godot_import_settings(self):
+        for name in NAMES:
+            atlas = f"assets/sprites/{name.lower()}-complete-battle.png"
+            settings = (ROOT / (atlas + ".import")).read_text()
+            self.assertIn('importer="texture"', settings)
+            self.assertIn(f'source_file="res://{atlas}"', settings)
+            self.assertIn('type="CompressedTexture2D"', settings)
+
 
 if __name__ == "__main__":
     unittest.main()
