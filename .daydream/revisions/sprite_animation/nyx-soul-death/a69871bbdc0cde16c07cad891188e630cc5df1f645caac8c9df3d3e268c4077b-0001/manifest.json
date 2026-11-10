@@ -1,0 +1,25 @@
+{
+  "files": {
+    "death.contact.png": "b14f264d1f445b6457d17dfe252a6b1c84fa6177787bfa15acd0f213d6c63598",
+    "death.motion.png": "c5afea5494fd72d57196cbbd60bbc5eac94fac9eef099c93cb9aef0f231b280e",
+    "preview.html": "b03d8780a65f490579478aa692807caa8e366d505c20e481a68153aee3d57828",
+    "source.json": "a53df3381ea6f8e0cc1e68511cb9fae7d448e8ade62a132ebc8229c098e79327",
+    "spritesheet.png": "7b2676909fc44a9876c62498bd502e7a8f95476ab24777389c62aa0df58eac78"
+  },
+  "generator": {
+    "pillow": "12.3.0",
+    "tool": "daydream-animations"
+  },
+  "height": 112,
+  "kind": "sprite_animation",
+  "name": "nyx-soul-death",
+  "provenance": {
+    "base_revision_hash": "3bced9167acc2102f6321464999f92b21a1be5dd5fc7cac803ab0d568cd69b2f",
+    "display_name": "Nyx \u2014 Soul \u00b7 Death",
+    "license": null,
+    "method": "animation-recipe",
+    "recipe_sha256": "71c8fa08ac41b4ab2dd7c0216de03782656811d69b5b8f52955d8751228f3bff"
+  },
+  "schema_version": 1,
+  "width": 80
+}

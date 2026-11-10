@@ -1,0 +1,22 @@
+{
+  "files": {
+    "attack.contact.png": "fc7916dc4bae86f832a9b848b873aa58f31b5eed466ccf9191b93401655158f9",
+    "attack.motion.png": "9b120dcf6bdafb12a2ff70fca6c67fd965601e8ff815812d54ee8f835049d9fc",
+    "death.contact.png": "b14f264d1f445b6457d17dfe252a6b1c84fa6177787bfa15acd0f213d6c63598",
+    "death.motion.png": "c5afea5494fd72d57196cbbd60bbc5eac94fac9eef099c93cb9aef0f231b280e",
+    "hurt.contact.png": "5b42e1edaee315618f6a512995bf5b8d3b8264b8ecdecfb0306fd44820982b3a",
+    "hurt.motion.png": "d72ad5ec103cd5fdc959255fda5180fb63ea31e8cf16e75675800cb6e5367060",
+    "idle.contact.png": "d0af6314191674bbb5bc884790110e3f56792c53791805798434df8b6679809d",
+    "idle.motion.png": "6e3b84e1937f9621244a0e51e3db1a8b5cec583ad4cfe725fc5ca157183a270e",
+    "preview.html": "d0f6fde245ee7b5754609f7d7fae2cf7ae4df0f8a1e1d62b1b1fe34fb79e82f7",
+    "source.json": "b253c8edba9fdb134200ea04a75bd484723314bb28f643787d497541e83bc421",
+    "spritesheet.png": "3d340cac828eab874f9456493dd7a7328669fb6385252bc9bceb59aad30a0021",
+    "vanish.contact.png": "f65d2220099a9c571fa9315bc688c2ed1d2725621f35a506b51291e41f604b89",
+    "vanish.motion.png": "6743450323c12b9bda24d0b4ffd2c62654d90ecd89785f32aa746bc3098aa654"
+  },
+  "kind": "sprite_animation",
+  "reviewed_at": "2026-11-09T19:01:35.145113+00:00",
+  "reviewer": "user",
+  "revision_hash": "53ff65c58326536edd03a8547539d7763ffc938de2783d6e2f036da486969034",
+  "schema_version": 2
+}

@@ -1,0 +1,31 @@
+{
+  "files": {
+    "attack.contact.png": "060f6daa0fcaadda316a81182247cf44f1db079251acd353ebbfc8856da499e9",
+    "attack.motion.png": "6e3ef827f06b16b71246da2b6ac7d232f73856750dfa1f132df01da9d550404d",
+    "death.contact.png": "ee61767429eb1ca4edc95bf683ef241f6ad05f05c61372ba30aa8bcc15188f2f",
+    "death.motion.png": "215820c4a2761e928d9895fd494f816f13959d1d30e926fba141350e25e24382",
+    "hurt.contact.png": "7cded3315f765b9a9a34181d18991b8c968987d2f146b7e30f00e37a91ad66ad",
+    "hurt.motion.png": "63c7fa5eff836b6963f8c9e3dec25ae73e9eb544faa08a2035e03abf49c3a97e",
+    "idle.contact.png": "8d787f60b540a4712524d68b04346a78253c16e9092d8eff12961582699650ab",
+    "idle.motion.png": "555f33de1a0dec61f7578f33a3e57b38dee81a94997f7a49b8bdebaa1054131c",
+    "preview.html": "bcbcad398353e606b2365ef9079c31410bf90cdef9140c22da3dbd4d80bd54ed",
+    "source.json": "13aa70dda01ddf015d49158dc961491e8a1b70c6cefe3b7ec07952d7151ac29f",
+    "spritesheet.png": "d54f860f92aab6f2d46764655f74f920d6693eb917a509a0076517496511acb7"
+  },
+  "generator": {
+    "pillow": "12.3.0",
+    "tool": "daydream-animations"
+  },
+  "height": 96,
+  "kind": "sprite_animation",
+  "name": "malgharok-complete-battle",
+  "provenance": {
+    "base_revision_hash": "3e0c744fcba8827990309ad7b6ff79a27bdcf5a88f1166e1bd77bcdfa1484e02",
+    "display_name": "Malgharok Complete Battle",
+    "license": null,
+    "method": "animation-recipe",
+    "recipe_sha256": "36d87ca3872a6d5df060ed48f9f53a853ba07e3fe8e22f62b27fef42536a55e2"
+  },
+  "schema_version": 1,
+  "width": 96
+}

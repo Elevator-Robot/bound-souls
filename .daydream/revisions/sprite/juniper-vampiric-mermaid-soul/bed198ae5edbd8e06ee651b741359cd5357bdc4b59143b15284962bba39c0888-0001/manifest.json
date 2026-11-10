@@ -1,0 +1,22 @@
+{
+  "files": {
+    "preview.png": "595e43d385298f7bdde19e550722beec9c081706d41605c5d2d173fbf1335201",
+    "source.json": "fa375db0ac7db1cdb3ddadfce1feaa605e1382d310389b42b51de0aed07f53e8",
+    "sprite.png": "0616f46b904185142ccfd822c8fcbf35cbe7366f538d41f271e4e4069cfc1407"
+  },
+  "generator": {
+    "pillow": "12.3.0",
+    "tool": "daydream-sprites"
+  },
+  "height": 96,
+  "kind": "sprite",
+  "name": "juniper-vampiric-mermaid-soul",
+  "provenance": {
+    "display_name": "Juniper \u2014 Vampiric Mermaid Soul",
+    "input_sha256": "fa375db0ac7db1cdb3ddadfce1feaa605e1382d310389b42b51de0aed07f53e8",
+    "license": null,
+    "method": "pixel-spec"
+  },
+  "schema_version": 1,
+  "width": 96
+}

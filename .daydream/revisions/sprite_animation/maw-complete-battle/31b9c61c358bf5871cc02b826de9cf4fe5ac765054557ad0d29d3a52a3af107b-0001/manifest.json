@@ -1,0 +1,31 @@
+{
+  "files": {
+    "attack.contact.png": "5d1bc05f694c49c811570c801851dcf941ccacc24bbbfcac6909051667d618f2",
+    "attack.motion.png": "c9f0b5dfd0fe1717d380dffaff5b72c685803672517234a3972544879c2db17c",
+    "death.contact.png": "27a1af654f2eae47e34dd6a2958a36dac65620331fbde265124faa8355f7db80",
+    "death.motion.png": "e06f7bb3fed2bd54146dc824e32aab89708c8c57feca534362125da36c9d6a82",
+    "hurt.contact.png": "e1a04722d79fd9061d95d486df79705f8e6ae88390609044eb6021c86e726ba7",
+    "hurt.motion.png": "f5020cdf4627f70a8d8d471052637ab05166bdc4d146c0245bc7abf695b3a668",
+    "idle.contact.png": "506bd8863fc99a57211ed61a00bbb28dc4d2042b18c7b392abea15de70e58628",
+    "idle.motion.png": "e8e16bc747968eb8cd6975da3a91d99ae6bf15af44e0809c8f46822d4f9254a4",
+    "preview.html": "4399d460b92a0af247098e9add7ff6574b9ee9c03ea98f722d5cb24c2e0aa2bd",
+    "source.json": "55be3f2800afe4e9e1abedafdf63e2aaef50c8be37a997f74413e6c41130213c",
+    "spritesheet.png": "d6b39750370d6cbb7a6535a3b22d5635b7c834888593c0fac5063e0f50606231"
+  },
+  "generator": {
+    "pillow": "12.3.0",
+    "tool": "daydream-animations"
+  },
+  "height": 96,
+  "kind": "sprite_animation",
+  "name": "maw-complete-battle",
+  "provenance": {
+    "base_revision_hash": "53e016f1155dd9b224d0aff3bb134f7d5635f586004c7973a33e04e5a5fdcfe7",
+    "display_name": "Maw Complete Battle",
+    "license": null,
+    "method": "animation-recipe",
+    "recipe_sha256": "8e75cfc30fbfc7b7ba91d3620d140071ca9f0cb687df90ad22f9fa78246bae76"
+  },
+  "schema_version": 1,
+  "width": 96
+}

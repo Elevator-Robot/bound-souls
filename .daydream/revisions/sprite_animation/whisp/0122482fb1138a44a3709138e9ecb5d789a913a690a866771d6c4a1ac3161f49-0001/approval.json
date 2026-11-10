@@ -1,0 +1,16 @@
+{
+  "files": {
+    "attack.contact.png": "c4ab28f54007e4163446fcf8da28e0e5f8b8148d9346f3794864a8cd799c63ce",
+    "attack.motion.png": "83fe84f3d210026ba1db77d745079541eecf800442a7a013023fcbe80565852a",
+    "idle.contact.png": "23b7be30b311614b33ddbd17e8d6e867d8ff4c156f0dc6d2421ef2651cd4559a",
+    "idle.motion.png": "147026d86cd20bcf9a8c45137aa6fef9b75a2b83a4ce20976b6a9cf269ad42c2",
+    "preview.html": "e4e1ec93fb2575b1f5f5e19de2b214725e48ad54d5116d486ac578713a2604f8",
+    "source.json": "99fca8c647c0e3f45d3ab44490247d00cfcc80fc6fc0561f0e500c3d04505097",
+    "spritesheet.png": "cc2994971e0dc69c2f7d78089b220a21929a5bdc2184eef2f811f08b9bdbb016"
+  },
+  "kind": "sprite_animation",
+  "reviewed_at": "2026-11-08T17:11:28.362890+00:00",
+  "reviewer": "aphexlog",
+  "revision_hash": "0122482fb1138a44a3709138e9ecb5d789a913a690a866771d6c4a1ac3161f49",
+  "schema_version": 2
+}

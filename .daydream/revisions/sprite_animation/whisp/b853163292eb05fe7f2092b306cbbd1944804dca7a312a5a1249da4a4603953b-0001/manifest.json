@@ -1,0 +1,27 @@
+{
+  "files": {
+    "attack.contact.png": "c3afdcc17ab1dba4ade8cdbee8c847bb1fb3d9f68bf2c5499aab115d3b72dfb0",
+    "attack.motion.png": "2e354b55d08e983ea3b1dd96509b741cbd7898e1e94db81cf3a558ea14eade91",
+    "idle.contact.png": "23b7be30b311614b33ddbd17e8d6e867d8ff4c156f0dc6d2421ef2651cd4559a",
+    "idle.motion.png": "147026d86cd20bcf9a8c45137aa6fef9b75a2b83a4ce20976b6a9cf269ad42c2",
+    "preview.html": "0d56c351258660541e280e964eb336c3e5060dfb874df5b0dacefbeae2e43e4a",
+    "source.json": "c80f8042cd905c770ade8a395ad6de2dfa6e75534421ecf97ec58d8125d6e440",
+    "spritesheet.png": "76585b88d3dbbb002f3557d98f5a9e89f54cea703f6a0ec3a6f6a37666fc5385"
+  },
+  "generator": {
+    "pillow": "12.3.0",
+    "tool": "daydream-animations"
+  },
+  "height": 96,
+  "kind": "sprite_animation",
+  "name": "whisp",
+  "provenance": {
+    "display_name": "Whisp",
+    "license": null,
+    "method": "animation-edit",
+    "parent_revision_hash": "3feed610ea6b52b9cf129a565d8ae5527e78efd46ba9d8a36fc6db9a4c064ec5",
+    "patch_sha256": "bbde05f8d5d079a50841e6b80d422f65ab2442d0eee3eb330c67886a57594852"
+  },
+  "schema_version": 1,
+  "width": 96
+}

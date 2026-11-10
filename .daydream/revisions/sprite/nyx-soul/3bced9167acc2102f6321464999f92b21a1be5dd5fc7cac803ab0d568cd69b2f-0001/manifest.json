@@ -1,0 +1,23 @@
+{
+  "files": {
+    "preview.png": "6da3fece0f084f9f52384151a7d66a711f9638c1c4513845648b6f32cb7ddd58",
+    "source.json": "099b0f31c2566415434754d227aac220291f8613d3d23863204feb75cfe84e93",
+    "sprite.png": "a74ba2819ca77b72920e21ccf42fe573ce147433fe7130dfb724ed798966dca2"
+  },
+  "generator": {
+    "pillow": "12.3.0",
+    "tool": "daydream-sprites"
+  },
+  "height": 112,
+  "kind": "sprite",
+  "name": "nyx-soul",
+  "provenance": {
+    "display_name": "Nyx \u2014 Soul",
+    "license": null,
+    "method": "edit",
+    "parent_revision_hash": "28dde5b90bb876e64d83ed3820ec97d7bb5f20131ad0fc2b27391ed6a9cdbad3",
+    "patch_sha256": "505e1e6dd74a71b1c26099038bd22f7b9efcae657c4360b6d6d564d979e7e851"
+  },
+  "schema_version": 1,
+  "width": 80
+}

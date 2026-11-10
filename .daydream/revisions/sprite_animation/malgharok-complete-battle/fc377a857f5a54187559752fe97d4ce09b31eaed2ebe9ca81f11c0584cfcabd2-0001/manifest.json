@@ -1,0 +1,31 @@
+{
+  "files": {
+    "attack.contact.png": "94ddfa4ec4d0c9d2176dd6c7dedb612ae1410626313209cd35ba423c81a6a9db",
+    "attack.motion.png": "8269499de12eb96ac9dd9e78f7808faebc55cb9c7bda57ef316d0c17fbdc2d46",
+    "death.contact.png": "067ac0e8601e97284b2d8ccecba3eb119e7f69ac221593386a7ead3b6971b572",
+    "death.motion.png": "1ec4657407b26861f9df93f86a6621d6696210146b110914e67606fe6290ba24",
+    "hurt.contact.png": "5ef5d2682824c79232690a5fbf0bbfe75a545ea1a91ee2a1b79c8d6381a9cd2f",
+    "hurt.motion.png": "ba06c1c1d7d270d7e7ebf1e4daa5faa163ca8d0a9f19b046835bea13ac7f9170",
+    "idle.contact.png": "63ff3b18352f20e99276a2237e4ce1493b61e2263dbf6b86ce57c8832695d620",
+    "idle.motion.png": "76e54f7b820d2cdca2a7c48abeda9b750d2cf3aca91efcf5c70c11fea0152e43",
+    "preview.html": "bcbcad398353e606b2365ef9079c31410bf90cdef9140c22da3dbd4d80bd54ed",
+    "source.json": "28a667a1750c1aabdbc1d058abbfa51d86909e64170ccdd3cb56003d0722eaf8",
+    "spritesheet.png": "91ed2ff90814d5554e53125b07fe17add7c083ef6be77d2c16cdc7fc5352b295"
+  },
+  "generator": {
+    "pillow": "12.3.0",
+    "tool": "daydream-animations"
+  },
+  "height": 96,
+  "kind": "sprite_animation",
+  "name": "malgharok-complete-battle",
+  "provenance": {
+    "display_name": "Malgharok Complete Battle",
+    "license": null,
+    "method": "animation-edit",
+    "parent_revision_hash": "0e921fe2abd346e6db35153729307e9f22e210e8e13fdbf00bf2b558ef661446",
+    "patch_sha256": "d9eccb703f6f8730402dbacefde147cc377a7f6229acf5407d7c3792147c0c32"
+  },
+  "schema_version": 1,
+  "width": 96
+}

@@ -1,0 +1,23 @@
+{
+  "files": {
+    "preview.png": "806c53b7855f4fb9b11fa4216213e7c4fb5f9597dbc32ac0c0bcaa49d2debded",
+    "source.json": "5e8dfb62c75280e11c8feb309fc1b2aef8b42aa9387f28b4defd71e6ed6b0bb8",
+    "sprite.png": "8bbfced9ae3b2c151fb2acf81fff97d44fc5fc2b25d95189a68c8d941b15b83f"
+  },
+  "generator": {
+    "pillow": "12.3.0",
+    "tool": "daydream-sprites"
+  },
+  "height": 96,
+  "kind": "sprite",
+  "name": "moss",
+  "provenance": {
+    "display_name": "Moss",
+    "license": null,
+    "method": "edit",
+    "parent_revision_hash": "96cdc1c8b1d82cf9352c6da9a67d0da4f434ec1023fcfe3c24915e2b6320c0e1",
+    "patch_sha256": "63c167b59bfd0de5b387a56fa321ec4775b6955bd52f4bcb91dbe4646dacdd54"
+  },
+  "schema_version": 1,
+  "width": 96
+}

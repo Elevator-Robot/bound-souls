@@ -1,0 +1,9 @@
+{
+  "decision": "changes_requested",
+  "feedback": "fix it so that rather than him entirely shifting up and down, i mean for him to instead have a breathing bob up/down animation.. fix it",
+  "kind": "sprite_animation",
+  "reviewed_at": "2026-11-08T17:59:58.247478+00:00",
+  "reviewer": "aphexlog",
+  "revision_hash": "44a24244583d86f3f6a3ff8d94b00591b163b3a8af22522c2b63c75a021d4a0d",
+  "schema_version": 1
+}

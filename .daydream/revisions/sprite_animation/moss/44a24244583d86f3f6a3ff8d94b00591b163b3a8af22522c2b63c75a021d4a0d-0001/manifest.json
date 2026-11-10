@@ -1,0 +1,27 @@
+{
+  "files": {
+    "attack.contact.png": "ebb00c2ae7526b80b1afc8ad5af8fec92886e3e5ea3c78b805ed23907794fd82",
+    "attack.motion.png": "8ffe2fd26de09b50feb4f338d3456a617c1790c3337322e8e03df10692be9abb",
+    "idle.contact.png": "fd4f0198b39289c112c54ffd820859d3bb39353f8e70ea415f118e66d0aa98d8",
+    "idle.motion.png": "b9e653351545619792b921e229f66ddc1a3c7da6462d7ef6d07ce879fb33cab7",
+    "preview.html": "7e8e08c4f616e0b1a82dd0ec8e35125e5404d0d87b2a5513749ac140d0b9bd27",
+    "source.json": "5adf8ee4edf661c12f1fbac68439b175f9b342a907cda8ebff13b174b282510a",
+    "spritesheet.png": "fbba1c30227a08bd82d3412263de740d1474c25b3abbde102374cf6d81dcf271"
+  },
+  "generator": {
+    "pillow": "12.3.0",
+    "tool": "daydream-animations"
+  },
+  "height": 96,
+  "kind": "sprite_animation",
+  "name": "moss",
+  "provenance": {
+    "display_name": "Moss",
+    "license": null,
+    "method": "animation-edit",
+    "parent_revision_hash": "2ebc20324dd49f34f862930fbd9d7e8c235401632b6e2d16cdb16612f8554935",
+    "patch_sha256": "6d52ae6ab3049421491da870313be93bb75d74943725237edf58c1965285dc71"
+  },
+  "schema_version": 1,
+  "width": 96
+}

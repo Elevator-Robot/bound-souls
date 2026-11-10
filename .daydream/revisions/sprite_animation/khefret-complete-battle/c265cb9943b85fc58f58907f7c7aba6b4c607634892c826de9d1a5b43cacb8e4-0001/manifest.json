@@ -1,0 +1,35 @@
+{
+  "files": {
+    "attack.contact.png": "957bb52ab82fd414a87d97d9a67df59aae44a488ab0f16d10966dbdfe9b39d42",
+    "attack.motion.png": "1035fe749091af37256f0667e9694f337eec016a68a70d9fdac2107262eabe4c",
+    "death.contact.png": "0cbaae04fc525deca0a2388ca39e0604c60d3d53f0bcf3f6e62070b80915e190",
+    "death.motion.png": "8df12918e7e6cfc707e9e921834fcd92d74f249ed402cfc6c94df53a6ff68bb2",
+    "hurt.contact.png": "2c6dd9dbb898a6636c025172b1dce4b4e13fc0d13eaf0608b15866e19af2bb3b",
+    "hurt.motion.png": "c757e825868e2e1deeb358777455b4cdfb9461e850db18a9bacd04f3b8e4e86b",
+    "idle.contact.png": "7b2a6d184640f7c18ff86c9844ccf09a7a864189e0cf66478f55f5abb6594179",
+    "idle.motion.png": "605ff720f45b851a2e3eaf1dc752d25cb469e0df5f95b3255c92c1242e265777",
+    "preview.html": "3e8d2cd4cee20060d0f4d2e6c51a9b702a675ffa61b49237ddf41edbe9fad78a",
+    "scarab_ward.contact.png": "f108f29d46ab28b39ef74ce0c333494c86a1fe40e9a0094109f7ce8a3bcbaefd",
+    "scarab_ward.motion.png": "4efc31524842d93c48a6e9114023674fe3d75e70f9455b499c8c102218c57375",
+    "solar_judgment.contact.png": "7b5ed78ccbaab0ed63e615947a8e3ee7ea9c87fad5bfe11aedd07d55eb915a22",
+    "solar_judgment.motion.png": "58a732ab44ea3c19b3dd2bcd73b73f7f7558969493701300e86027e18eea9ca1",
+    "source.json": "78c0b5ea0281e87a9017c8a020a2a033ea49ceb54693f81b23c86a7257560d52",
+    "spritesheet.png": "cf1eb3d4969637a3ab8bdfe13ebc89efa446263595414e070568f65690864c7b"
+  },
+  "generator": {
+    "pillow": "12.3.0",
+    "tool": "daydream-animations"
+  },
+  "height": 96,
+  "kind": "sprite_animation",
+  "name": "khefret-complete-battle",
+  "provenance": {
+    "base_revision_hash": "03c6e59aa6fb22be8c5bd4a116eb5949fb8fadba7916a6959f3e780bbbbcc304",
+    "display_name": "Khefret Complete Battle",
+    "license": null,
+    "method": "animation-recipe",
+    "recipe_sha256": "e1f53b51b053b790cd75819a04a6ef5c64b32628da17cff4730446b9ccbb1089"
+  },
+  "schema_version": 1,
+  "width": 64
+}

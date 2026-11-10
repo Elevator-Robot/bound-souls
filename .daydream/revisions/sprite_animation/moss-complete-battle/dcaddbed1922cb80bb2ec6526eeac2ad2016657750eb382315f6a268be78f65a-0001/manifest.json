@@ -1,0 +1,31 @@
+{
+  "files": {
+    "attack.contact.png": "834b1eef1d18ca8e8c00040c64e53df54f6239d38f406ea2ce9324e7940e1add",
+    "attack.motion.png": "603bdc5f9f9f15c5f634d064cdf422385fc6a35815001769579b928bd378a2b7",
+    "death.contact.png": "75fca7c58deba894952892c168142ef474e557298394c6f7e12b0d4a28645fa9",
+    "death.motion.png": "f8069297cf8437b18262fce12ef04389e3ed03be70490fa2b954d1ffbc7912bb",
+    "hurt.contact.png": "9787a1380d906fde3f4144a1007b6139f3db355312f6841a2e70b94be03dffee",
+    "hurt.motion.png": "deb098dab3d8036e7238c55125c98b78bc5c14d1833f68e8a9f9cee27f188d55",
+    "idle.contact.png": "3367e43a51c4a873aadc3fb34f9a4cb776ec65c6a6435f24e16d11a1ed45d997",
+    "idle.motion.png": "41fafcf75fca7187592b86fadd9e6b214bd62615e0e18947026df7fe396956b9",
+    "preview.html": "70241f6ce56cf39e94c2763063200c91615ba867a67fe25db1807b3a5706beb9",
+    "source.json": "2789dc6e59fb5ad66f080126e0d9fc25c31442cd5f8518ea1239d95786b13a11",
+    "spritesheet.png": "892ebf914dd6b409dbced2f94b641edeac59785ace4bcb96fdca77719ae0ad32"
+  },
+  "generator": {
+    "pillow": "12.3.0",
+    "tool": "daydream-animations"
+  },
+  "height": 96,
+  "kind": "sprite_animation",
+  "name": "moss-complete-battle",
+  "provenance": {
+    "base_revision_hash": "b3828f7f27dbbd29588d28ed48e147a58797f024a1269c71b06a52b60ef4fdc6",
+    "display_name": "Moss Complete Battle",
+    "license": null,
+    "method": "animation-recipe",
+    "recipe_sha256": "65967c4a23521bd8dd4f6fa5843a7ecfd72ae7d97eeab76913e2f56c6eb620e6"
+  },
+  "schema_version": 1,
+  "width": 96
+}

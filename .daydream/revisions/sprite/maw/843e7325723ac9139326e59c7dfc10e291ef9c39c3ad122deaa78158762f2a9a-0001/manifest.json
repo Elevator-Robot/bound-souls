@@ -1,0 +1,22 @@
+{
+  "files": {
+    "preview.png": "77c05a9401253b981bf1ff0a98c81a2f00965a2d3b2fcbf92bb8f962797a615e",
+    "source.json": "6ce5ecbdfed15d1d0c58cca3a3114117b39ad3f35667e1a3c82bd68109585a7d",
+    "sprite.png": "e6a6d321cd88aaf61635c18cc91e431caffba8f68a6c282640a2e7a4e9d847e8"
+  },
+  "generator": {
+    "pillow": "12.3.0",
+    "tool": "daydream-sprites"
+  },
+  "height": 96,
+  "kind": "sprite",
+  "name": "maw",
+  "provenance": {
+    "display_name": "Maw",
+    "input_sha256": "6ce5ecbdfed15d1d0c58cca3a3114117b39ad3f35667e1a3c82bd68109585a7d",
+    "license": null,
+    "method": "pixel-spec"
+  },
+  "schema_version": 1,
+  "width": 96
+}

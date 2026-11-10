@@ -1,0 +1,27 @@
+{
+  "files": {
+    "hurt.contact.png": "5b42e1edaee315618f6a512995bf5b8d3b8264b8ecdecfb0306fd44820982b3a",
+    "hurt.motion.png": "d72ad5ec103cd5fdc959255fda5180fb63ea31e8cf16e75675800cb6e5367060",
+    "preview.html": "090c138743a64772fc1bb28ad3be4bd3c3677f13a47b825323c125423982a6a1",
+    "source.json": "621207f409592b7831acaa33deaeac97fdd824957efe232a670522bcff241110",
+    "spritesheet.png": "47d202cb4f12f68177c7a7c3d149d4c9f5ecf44e5689457c1c45068e364a3ef3",
+    "vanish.contact.png": "f65d2220099a9c571fa9315bc688c2ed1d2725621f35a506b51291e41f604b89",
+    "vanish.motion.png": "6743450323c12b9bda24d0b4ffd2c62654d90ecd89785f32aa746bc3098aa654"
+  },
+  "generator": {
+    "pillow": "12.3.0",
+    "tool": "daydream-animations"
+  },
+  "height": 112,
+  "kind": "sprite_animation",
+  "name": "nyx-soul-hurt-and-vanish",
+  "provenance": {
+    "base_revision_hash": "3bced9167acc2102f6321464999f92b21a1be5dd5fc7cac803ab0d568cd69b2f",
+    "display_name": "Nyx \u2014 Soul \u00b7 Hurt and Vanish",
+    "license": null,
+    "method": "animation-recipe",
+    "recipe_sha256": "e46f3e4a834a95200e3f0f26f84d208b82637ba5557b1c01347c65c4835b3d59"
+  },
+  "schema_version": 1,
+  "width": 80
+}

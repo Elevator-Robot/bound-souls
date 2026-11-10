@@ -1,0 +1,31 @@
+{
+  "files": {
+    "attack.contact.png": "42db8c5412afc9c38a8b0ac53c2eb7653cbf6c815d29391da2a1dd7550da49fc",
+    "attack.motion.png": "5e931e8c48106d0865abe16e692ad7b1b811acbaa365a3dcfadf90619ff5d51a",
+    "death.contact.png": "7b1fea8ef01e7882f222163103647e62dd5f024804e426863e3a63c21982237e",
+    "death.motion.png": "f805ceea784a6aeb423f3c6f7be1579301b4e269d84097bab05011e82fb88cc2",
+    "hurt.contact.png": "a3d3ff788bfaa9ed8448b3b671e29885cbd4acc63b7a42344b424e629477ce24",
+    "hurt.motion.png": "7a001b8cbe57616a00d54ff816950baedd2145db313d0533e65260469f45f204",
+    "idle.contact.png": "e60852c4ff15ac7e39d871ac9e040cbf45481ce77d885843b4a31aa64e33edde",
+    "idle.motion.png": "b3b9ee629fb08a50f7402721e159069dc2ec9c44127546fc800ea1f62002b5d2",
+    "preview.html": "ace27141f753975a983dfb4a468b0e99c1424c8918372b8625c5a97cb65f4301",
+    "source.json": "4255fff9abb05fe2e9a5837fce20f5e1f5c62fc07183b5f77246181ef24ce5cd",
+    "spritesheet.png": "b212e6a32baf297c0db081e0584290277737e29429a207f1453268a54caac5e7"
+  },
+  "generator": {
+    "pillow": "12.3.0",
+    "tool": "daydream-animations"
+  },
+  "height": 96,
+  "kind": "sprite_animation",
+  "name": "khefret-complete-battle",
+  "provenance": {
+    "display_name": "Khefret Complete Battle",
+    "license": null,
+    "method": "animation-edit",
+    "parent_revision_hash": "0a9521471d54f1d86a1ff356fa671afec3da483179c82bf257ff43e4f7f9e96f",
+    "patch_sha256": "80a62d4e9e85066624ecaa29eb408be76044fe28971d74be001598bbcab6ebd2"
+  },
+  "schema_version": 1,
+  "width": 64
+}

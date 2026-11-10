@@ -1,0 +1,23 @@
+{
+  "files": {
+    "preview.png": "8087eda9d8b06e6fb234030c06690a64c048faad75d8190d10f9d77f0800f6b1",
+    "source.json": "4f919c4238c32514f57ae31e9297c7833425c7da1ccb28bac1c4f5c6adec7b3f",
+    "sprite.png": "0f53209ca60b019fbb684e86e718a372e1de8965e431f962ceac6169d45ee0eb"
+  },
+  "generator": {
+    "pillow": "12.3.0",
+    "tool": "daydream-sprites"
+  },
+  "height": 96,
+  "kind": "sprite",
+  "name": "khefret-soul",
+  "provenance": {
+    "display_name": "Khefret \u2014 Soul",
+    "license": null,
+    "method": "edit",
+    "parent_revision_hash": "9dc73f701a0280b7646e4c8c1b5522a82b100757114792510ff73a3ed23dbd59",
+    "patch_sha256": "ee0680f6c6d3e4a96b78e8aa59eb95780cbb4a51a53295723c04eeda3d01e53d"
+  },
+  "schema_version": 1,
+  "width": 64
+}

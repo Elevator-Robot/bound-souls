@@ -1,0 +1,22 @@
+{
+  "files": {
+    "preview.png": "d94c8c507a2d1d099704248013297a4a64d17c74543454897978bf947b9a8e65",
+    "source.json": "1ea1748e6240abfdef7bf48ad0610f0c3ec3347bc2f6ba497cd0149756c331f2",
+    "sprite.png": "c9f2b8a586e7a5dbde6778116d8d8a77e1246abfa01bc7b15ea042b2494c608d"
+  },
+  "generator": {
+    "pillow": "12.3.0",
+    "tool": "daydream-sprites"
+  },
+  "height": 96,
+  "kind": "sprite",
+  "name": "malgharok",
+  "provenance": {
+    "display_name": "Malgharok",
+    "input_sha256": "1ea1748e6240abfdef7bf48ad0610f0c3ec3347bc2f6ba497cd0149756c331f2",
+    "license": null,
+    "method": "pixel-spec"
+  },
+  "schema_version": 1,
+  "width": 96
+}

@@ -1,0 +1,20 @@
+{
+  "files": {
+    "attack.contact.png": "4cd71b3b3a2de94ac2987b49a9ca8c3ed980dab2bad7c1c005907a19bf89c3eb",
+    "attack.motion.png": "67ba47323e349bd90f2c5348052469e7b76d57178b20ca510c8d136638a278e0",
+    "death.contact.png": "3fab5a8c5a4d7faed34c670f760d490d2db3ac2f4a01fdafb8c863164d204fd9",
+    "death.motion.png": "ad5612fbbf8127d5f9de718905461e977374c6f4fb6c58f80655b4e8a2aadf48",
+    "hurt.contact.png": "a31fcade1c66c4dc41f6572366ece3042e19366f2a30197e1bdd542d6579b94a",
+    "hurt.motion.png": "fed84e219ac23baca2d4aac55840b509a0c8b77a798e3381a7b18174bd0e1406",
+    "idle.contact.png": "5e1bd9ae86cebdf9cbee3a1b109b6fd158b0e3001b6120e674419635ae3a3a32",
+    "idle.motion.png": "c0880cf53e9f0ee9fd582f7a964ec3f3b763c2659a64bccf92b1ab21953acc80",
+    "preview.html": "90af41d17c117ff7fa2ab9d82a08b7b2ab996d914fcc3705a0950b4f7262a0ca",
+    "source.json": "f676d45de28b6844d789b763319207bbb6a6e206f3eb2d0d5cb74d241569bac5",
+    "spritesheet.png": "f7ec95a43be571c2a95c297723d289a9c16f0c7e6853533b5eb0489090fae38c"
+  },
+  "kind": "sprite_animation",
+  "reviewed_at": "2026-11-09T19:01:37.403798+00:00",
+  "reviewer": "user",
+  "revision_hash": "c4b49a834548fe75da8c6976baf0ba63c9a600ef42f09934cecf8b0bb2b5dfb6",
+  "schema_version": 2
+}

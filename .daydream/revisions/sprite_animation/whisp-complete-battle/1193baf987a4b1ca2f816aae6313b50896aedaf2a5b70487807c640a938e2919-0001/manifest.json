@@ -1,0 +1,31 @@
+{
+  "files": {
+    "attack.contact.png": "c4ab28f54007e4163446fcf8da28e0e5f8b8148d9346f3794864a8cd799c63ce",
+    "attack.motion.png": "83fe84f3d210026ba1db77d745079541eecf800442a7a013023fcbe80565852a",
+    "death.contact.png": "0a2236adda6eeca8ba0c49cddf8e3f9ddbfdabfd4c88ffbea768d794c1684605",
+    "death.motion.png": "6c0d7daa107839175697ad3068bdd547fd9c52fdc774ab097a3e384353c1b2af",
+    "hurt.contact.png": "82f412703590f90a5926c5be1383078bd12d11e0b7c9337b6aa45b23b11bfc28",
+    "hurt.motion.png": "330d16fe932dfae6e95a0301e6c0c8c386f26c08afd96311a6ad2c086f281302",
+    "idle.contact.png": "23b7be30b311614b33ddbd17e8d6e867d8ff4c156f0dc6d2421ef2651cd4559a",
+    "idle.motion.png": "147026d86cd20bcf9a8c45137aa6fef9b75a2b83a4ce20976b6a9cf269ad42c2",
+    "preview.html": "b2522f7d8f211656f1170ac41662f6be8be051d6e8e166ea9c879de222a3c776",
+    "source.json": "4c7bf6f22e8047e6bc6aad8c6a0f56f4830e796d0903b34431ab7cbd6f3b0e67",
+    "spritesheet.png": "a8236961a1523073332803fb08e564c731546ba5734046b42d68bdff60ef39dc"
+  },
+  "generator": {
+    "pillow": "12.3.0",
+    "tool": "daydream-animations"
+  },
+  "height": 96,
+  "kind": "sprite_animation",
+  "name": "whisp-complete-battle",
+  "provenance": {
+    "base_revision_hash": "2c95d10296b529b66370d75dea7fb5968354454258d0c6af97733cd18dac291a",
+    "display_name": "Whisp Complete Battle",
+    "license": null,
+    "method": "animation-recipe",
+    "recipe_sha256": "71c8864d546c8b4e6bd6021ce92c657b20c5f72413d9bedd4dc081beece2b4b9"
+  },
+  "schema_version": 1,
+  "width": 96
+}

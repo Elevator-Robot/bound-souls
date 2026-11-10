@@ -1,0 +1,27 @@
+{
+  "files": {
+    "attack.contact.png": "fc7916dc4bae86f832a9b848b873aa58f31b5eed466ccf9191b93401655158f9",
+    "attack.motion.png": "9b120dcf6bdafb12a2ff70fca6c67fd965601e8ff815812d54ee8f835049d9fc",
+    "idle.contact.png": "d0af6314191674bbb5bc884790110e3f56792c53791805798434df8b6679809d",
+    "idle.motion.png": "6e3b84e1937f9621244a0e51e3db1a8b5cec583ad4cfe725fc5ca157183a270e",
+    "preview.html": "d0e84ae9433dbfc8b15f4b4ca3764b3f2eaaf20e03df60e5d6bffefc1d31f4ad",
+    "source.json": "fa75a565005513d99fff448a56eca47ab309459e4f3c9ae24e087c6b89c526a5",
+    "spritesheet.png": "6035b2578c18f5fa81a109f0f72a5bd570282d944c9bfd7d6c3cc5dadcfd517d"
+  },
+  "generator": {
+    "pillow": "12.3.0",
+    "tool": "daydream-animations"
+  },
+  "height": 112,
+  "kind": "sprite_animation",
+  "name": "nyx-soul-idle-and-attack",
+  "provenance": {
+    "base_revision_hash": "3bced9167acc2102f6321464999f92b21a1be5dd5fc7cac803ab0d568cd69b2f",
+    "display_name": "Nyx \u2014 Soul \u00b7 Idle and Attack",
+    "license": null,
+    "method": "animation-recipe",
+    "recipe_sha256": "1c26a4361826b5ba925ba0665aa74fd39458541bd5a1a3f530327d66539e91fb"
+  },
+  "schema_version": 1,
+  "width": 80
+}

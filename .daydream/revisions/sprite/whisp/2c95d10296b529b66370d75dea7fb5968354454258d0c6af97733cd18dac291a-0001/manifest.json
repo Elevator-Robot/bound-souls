@@ -1,0 +1,23 @@
+{
+  "files": {
+    "preview.png": "4a515cf4980a2b5e149e4aea03e55281842161755063f8f7481ec02624582068",
+    "source.json": "95318033aba56b980b92b245701dd4834234634695f1878bbab016aaf652bc62",
+    "sprite.png": "dfdbe54122db106686df7f7fb743685d3219e6a042d4f3080d029aa96db6c4b3"
+  },
+  "generator": {
+    "pillow": "12.3.0",
+    "tool": "daydream-sprites"
+  },
+  "height": 96,
+  "kind": "sprite",
+  "name": "whisp",
+  "provenance": {
+    "display_name": "Whisp",
+    "license": null,
+    "method": "edit",
+    "parent_revision_hash": "c5a779b8ab161afdeabc060e78db29c105803361b7fad1ddbb9f922f2f4e1434",
+    "patch_sha256": "342b4927f30808a204456e55e3af22a3f6f43f1a6e5c142e9ce93a7410c2fad4"
+  },
+  "schema_version": 1,
+  "width": 96
+}
