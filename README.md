@@ -44,6 +44,24 @@ status panels across the top, and messages/actions along the bottom. The approve
 canvases and pivots stay fixed. These checks are not a graphical or motion-quality
 review.
 
+## Combat backgrounds
+
+Each battle randomly selects one of the 13 user-supplied painted scenes in
+`assets/backgrounds/battle/`, including both frozen-observatory views. Original
+filenames, dimensions, and SHA-256 hashes are recorded in
+`art/backgrounds/sources.json`; the PNG pixels are unchanged. The older numbered
+backgrounds remain on disk but are not selected.
+
+The battle scene shows the mushroom clearing in the editor and selects a random
+scene at runtime. Backgrounds fill the window with linear filtering and preserved
+aspect ratio. Non-widescreen windows crop the sides or top/bottom rather than
+stretching the art. The combat sprites and UI layout are unchanged.
+
+Import the new textures using the approved Godot version before launching, as
+described above. The battle smoke check loads all 13 textures and checks their
+viewport coverage at four window sizes. Review fighter contrast, floor alignment,
+and cropping in the real game; headless checks do not establish visual fit.
+
 ## Open in Summer Engine
 
 This is an existing Godot 4.4 / GL Compatibility project. Summer's documented

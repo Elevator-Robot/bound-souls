@@ -1,9 +1,19 @@
 extends Control
 
 const BACKGROUND_PATHS: PackedStringArray = [
-	"res://assets/backgrounds/background1.png",
-	"res://assets/backgrounds/background2.png",
-	"res://assets/backgrounds/background3.png"
+	"res://assets/backgrounds/battle/ancient-brass-clockwork-engine-hall.png",
+	"res://assets/backgrounds/battle/ancient-library-of-spectral-light.png",
+	"res://assets/backgrounds/battle/ancient-temple-at-desert-sunset.png",
+	"res://assets/backgrounds/battle/eclipsed-marble-throne-room.png",
+	"res://assets/backgrounds/battle/floating-citadel-above-the-clouds.png",
+	"res://assets/backgrounds/battle/frozen-observatory-battle-terrace-2.png",
+	"res://assets/backgrounds/battle/frozen-observatory-beneath-the-emerald-aurora.png",
+	"res://assets/backgrounds/battle/misty-crimson-maple-shrine-courtyard.png",
+	"res://assets/backgrounds/battle/moonlit-ruined-cathedral-courtyard.png",
+	"res://assets/backgrounds/battle/moonlit-turquoise-mushroom-clearing.png",
+	"res://assets/backgrounds/battle/ruined-forge-beneath-a-molten-cavern-1.png",
+	"res://assets/backgrounds/battle/stormlit-harbor-quay.png",
+	"res://assets/backgrounds/battle/sunlit-underwater-palace-arena.png"
 ]
 const BATTLE_SOUNDS: Dictionary = {
 	"attack": "res://assets/audio/sfx/button_fx/fx/jump/button_fx_jump_001_01_cc0_avr.wav",
@@ -73,7 +83,7 @@ func _start_battle() -> void:
 
 
 func _load_random_background() -> void:
-	var background_index: int = randi() % BACKGROUND_PATHS.size()
+	var background_index: int = randi_range(0, BACKGROUND_PATHS.size() - 1)
 	background.texture = load(BACKGROUND_PATHS[background_index])
 
 

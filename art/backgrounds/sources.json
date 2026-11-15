@@ -1,0 +1,72 @@
+{
+  "source": "Existing user-generated PNGs supplied from Downloads/backgrounds. Original generation prompts and model were not supplied. Images are copied byte-for-byte.",
+  "width": 1672,
+  "height": 941,
+  "images": [
+    {
+      "original_filename": "Ancient Brass Clockwork Engine Hall.png",
+      "texture": "assets/backgrounds/battle/ancient-brass-clockwork-engine-hall.png",
+      "sha256": "3956ef2e5c51c92c5912e9dc5f9bf2e7ad7a14f1caead7797bf0d0f6405003f3"
+    },
+    {
+      "original_filename": "Ancient library of spectral light.png",
+      "texture": "assets/backgrounds/battle/ancient-library-of-spectral-light.png",
+      "sha256": "4c58beefcada737be56d7bca7a767a1124cd277faf28bf0b51f15e4886a86199"
+    },
+    {
+      "original_filename": "Ancient Temple at Desert Sunset.png",
+      "texture": "assets/backgrounds/battle/ancient-temple-at-desert-sunset.png",
+      "sha256": "db10bf189d9634254090a82ec54473e45ab8d4495b8f998acdc7c5d86f63ad6e"
+    },
+    {
+      "original_filename": "Eclipsed Marble Throne Room.png",
+      "texture": "assets/backgrounds/battle/eclipsed-marble-throne-room.png",
+      "sha256": "ae89966ceaaa04ba05bcd9f9ea8ec110ae8ff51732bd58d61d1bdd3d02d36186"
+    },
+    {
+      "original_filename": "Floating Citadel Above the Clouds.png",
+      "texture": "assets/backgrounds/battle/floating-citadel-above-the-clouds.png",
+      "sha256": "3b1b39c148bca9bfddbad6adefb528d74dc5d35b21172205274737977eaba73f"
+    },
+    {
+      "original_filename": "Frozen Observatory Battle Terrace-2.png",
+      "texture": "assets/backgrounds/battle/frozen-observatory-battle-terrace-2.png",
+      "sha256": "acb488a55d59b93b1db6ffd003e04f127740aaab5b03742a3f25e9cecda60ea2"
+    },
+    {
+      "original_filename": "Frozen Observatory Beneath the Emerald Aurora.png",
+      "texture": "assets/backgrounds/battle/frozen-observatory-beneath-the-emerald-aurora.png",
+      "sha256": "ed953d1f6a1896ed1d67a146044e937fa8d709e9905210ed6797c2b0f1ac5bd5"
+    },
+    {
+      "original_filename": "Misty Crimson Maple Shrine Courtyard.png",
+      "texture": "assets/backgrounds/battle/misty-crimson-maple-shrine-courtyard.png",
+      "sha256": "18258bcfd1ae26a1da335c1e2c4fb189c69382557a8535a842b53c55f9fe6cd6"
+    },
+    {
+      "original_filename": "Moonlit Ruined Cathedral Courtyard.png",
+      "texture": "assets/backgrounds/battle/moonlit-ruined-cathedral-courtyard.png",
+      "sha256": "8da4ba1bfbae9f7217873692785de9127e5cf1231026e07a99467282e39d682c"
+    },
+    {
+      "original_filename": "Moonlit Turquoise Mushroom Clearing.png",
+      "texture": "assets/backgrounds/battle/moonlit-turquoise-mushroom-clearing.png",
+      "sha256": "a57e8de8a0a807552d615028d3771aeb8b233541f524a6bb1d9078bae8b466f4"
+    },
+    {
+      "original_filename": "Ruined Forge Beneath a Molten Cavern-1.png",
+      "texture": "assets/backgrounds/battle/ruined-forge-beneath-a-molten-cavern-1.png",
+      "sha256": "15923402ccaad89523fce01c0842d4e232ea33eb29c4ed5fe53916317ddb9a36"
+    },
+    {
+      "original_filename": "Stormlit Harbor Quay.png",
+      "texture": "assets/backgrounds/battle/stormlit-harbor-quay.png",
+      "sha256": "b8f23bfcb0713629ebeb9d6e54d811db7bb26d5e4aa64c494e949ed5651566ea"
+    },
+    {
+      "original_filename": "Sunlit Underwater Palace Arena.png",
+      "texture": "assets/backgrounds/battle/sunlit-underwater-palace-arena.png",
+      "sha256": "f734b4024183b8e383f61b5db010b579e22fbbf208c556d7cb51a115a05cb532"
+    }
+  ]
+}

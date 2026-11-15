@@ -26,6 +26,7 @@ func _run() -> void:
 	await process_frame
 	var battle = current_scene
 	_check(battle.battle_active, "Battle must start with imported fighters")
+	await _check_battle_backgrounds(battle)
 	_check(battle.player_animation != null, "Starter fighter missing")
 	_check(battle.enemy_animation != null, "Wild fighter missing")
 	for sprite in [battle.player_animation, battle.enemy_animation]:
@@ -77,8 +78,41 @@ func _run() -> void:
 	empty.sprite_frames = null
 	_check(not battle._has_battle_frames(empty), "Missing frames must be rejected")
 	empty.free()
-	print("Battle smoke: 7 souls, both slots, all clips; failures=", failures)
+	print("Battle smoke: 13 backgrounds, 7 souls, both slots, all clips; failures=", failures)
 	quit(0 if failures == 0 else 1)
+
+
+func _check_battle_backgrounds(battle: Control) -> void:
+	var backdrop: TextureRect = battle.get_node("Background")
+	_check(backdrop.is_visible_in_tree(), "Battle scenery must be visible")
+	_check(backdrop.mouse_filter == Control.MOUSE_FILTER_IGNORE, "Backdrop must not intercept input")
+	_check(backdrop.get_index() < battle.get_node("BattleArea").get_index(), "Backdrop must stay behind fighters")
+	_check(backdrop.expand_mode == TextureRect.EXPAND_IGNORE_SIZE, "Backdrop must allow small viewports")
+	_check(backdrop.stretch_mode == TextureRect.STRETCH_KEEP_ASPECT_COVERED, "Backdrop must cover without distortion")
+	_check(backdrop.texture_filter == CanvasItem.TEXTURE_FILTER_LINEAR, "Painted backgrounds must use linear filtering")
+	var paths: PackedStringArray = battle.BACKGROUND_PATHS
+	_check(paths.size() == 13, "All thirteen approved backgrounds must be selectable")
+	_check(backdrop.texture != null, "Battle must start with actual scenery, not an empty backdrop")
+	if backdrop.texture != null:
+		_check(backdrop.texture.resource_path in paths, "Initial scenery must come from the new background set")
+	for path in paths:
+		var texture: Texture2D = load(path)
+		_check(texture != null, "Background failed to import: %s" % path)
+		if texture == null:
+			continue
+		var image: Image = texture.get_image()
+		_check(image != null and image.get_used_rect().has_area(), "Background has no visible pixels: %s" % path)
+		_check(texture.get_size() == Vector2(1672, 941), "Original background dimensions changed: %s" % path)
+		backdrop.texture = texture
+		for viewport_size in [Vector2i(1152, 648), Vector2i(800, 600), Vector2i(600, 800), Vector2i(1920, 1080)]:
+			root.size = viewport_size
+			await process_frame
+			await process_frame
+			_check(backdrop.get_global_rect().is_equal_approx(root.get_visible_rect()), "Background must fill viewport at %s: %s" % [viewport_size, path])
+	battle._load_random_background()
+	root.size = Vector2i(1152, 648)
+	await process_frame
+	await process_frame
 
 
 func _check_combat_layout(battle: Control, state: Node) -> void:
@@ -94,6 +128,8 @@ func _check_combat_layout(battle: Control, state: Node) -> void:
 			root.size = viewport_size
 			await process_frame
 			await process_frame
+			var backdrop: Control = battle.get_node("Background")
+			_check(backdrop.get_global_rect().is_equal_approx(root.get_visible_rect()), "Backdrop must fill viewport at %s" % viewport_size)
 			# Disjoint slots guarantee separation for mixed-species pairings too.
 			_check(not battle.player_sprite.get_global_rect().intersects(battle.enemy_sprite.get_global_rect()), "Combat slots overlap at %s" % viewport_size)
 			var opaque_bounds: Array[Rect2] = []

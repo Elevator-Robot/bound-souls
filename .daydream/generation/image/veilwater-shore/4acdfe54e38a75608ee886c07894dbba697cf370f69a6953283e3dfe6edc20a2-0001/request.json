@@ -1,0 +1,32 @@
+{
+  "display_name": "Veilwater Shore",
+  "name": "veilwater-shore",
+  "parent_revision_hash": null,
+  "prompt": "Create one finished combat background for Bound Souls, a dark-fantasy soul-creature RPG. This is an environment image ONLY, not a screenshot or concept sheet. Match the actual game's detailed 2D pixel-art aesthetic: deliberate crisp pixel clusters, rich layered shading, selective dark edges, subdued blue-green/teal and indigo shadows, weathered stone and organic forms, tiny restrained cyan/violet spirit-light accents. High-quality cohesive game art, atmospheric and mysterious rather than cheerful cartoon scenery. Do not use photorealism, 3D rendering, smooth airbrushed illustration, crude large blocks, or a pixel-grid overlay. Reference 1 is the game's environment tileset: use its bioluminescent teal/purple palette, vegetation and ancient stone language, NOT its atlas layout or black empty areas. Reference 2 is the approved Whisp character contact sheet: match its careful pixel detailing, earthy bone/wood tones and violet soul glow, but DO NOT draw this character, any other characters, the contact-sheet panels, checkerboards, pivot marks, labels or text. Reference 3 is the existing background for this biome: use ONLY its wide battle-stage perspective and generous clear ground, not its bright simple visual style. Composition is a single continuous wide landscape, 16:9, requested 1536 by 864 pixels. Slightly elevated, side-on JRPG battle camera, not overhead/isometric. Distant scenery and horizon sit in the upper third; continuous walkable ground fills the lower two thirds. Keep broad low-contrast standing areas around x=25% y=70% and x=75% y=61% with no raised platforms, circles or markings. These are for a closer left fighter and farther right fighter that the game adds later. The entire central battle area must remain unobstructed and lighter than the deepest edge shadows, with quiet midtones so dark silhouettes read. Frame detail at far sides and background. Top quarter and bottom fifth will partly sit under UI: no critical focal points there, no UI drawn. No people, creatures, ghosts with faces, skull characters, lettering, logos, borders, watermarks, weapons, or embedded interface. Opaque, edge-to-edge finished background. BIOME 2, SPECTRAL SHORE: Replace the sunny tropical beach with a moonlit shore of a mysterious inland sea. Dark indigo water occupies only the distant upper third, small pale turquoise wavelets meet silvery desaturated sand at the high horizon. Low weathered ruins and gently eroded stone arches stay far back near the shoreline or far edges; sparse twisted coastal trees and reeds frame the margins. Fine dim bioluminescent wash at the waterline, two or three tiny violet crystal fragments tucked into far-edge rocks, distant islands layered in lilac sea mist. The lower two thirds are a broad dry blue-grey sandy arena, subtle shallow ripples and scattered weathered stones at the edges, not a flooded battlefield. Quiet open grounded fighter spaces, restrained moonlight without a giant moon or prominent centered landmark. Same restrained teal/indigo/violet supernatural world as the woodland, distinct coastal identity.",
+  "references": [
+    {
+      "file": "reference-1.png",
+      "input_sha256": "d8abc584aa3153a9164e43f12c1dda8ce80503030a2ee3ea8ad5f2108e945f6d",
+      "path": "assets/sprites/tilesets/tilesetppathway.png",
+      "sha256": "b977cc4c5e45ee142c1c317026a44fbecf8d1c3404041314f6266046a35537bd"
+    },
+    {
+      "file": "reference-2.png",
+      "input_sha256": "23b7be30b311614b33ddbd17e8d6e867d8ff4c156f0dc6d2421ef2651cd4559a",
+      "path": ".daydream/revisions/sprite_animation/whisp-complete-battle/1193baf987a4b1ca2f816aae6313b50896aedaf2a5b70487807c640a938e2919-0001/idle.contact.png",
+      "sha256": "23b7be30b311614b33ddbd17e8d6e867d8ff4c156f0dc6d2421ef2651cd4559a"
+    },
+    {
+      "file": "reference-3.png",
+      "input_sha256": "40d76f548acff26fbb9757f36f755df7d18c418bb7a1b6ea19b88f9faeb1ecc3",
+      "path": "assets/backgrounds/background2.png",
+      "sha256": "1309e110c2cc62bd068b592912c9db58fa703d501dc72e4ed8a352ecc7773f8f"
+    }
+  ],
+  "schema_version": 1,
+  "size": [
+    1536,
+    864
+  ],
+  "transparency": "opaque"
+}
